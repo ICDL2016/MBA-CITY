@@ -2798,7 +2798,7 @@ textarea {
   text-align: justify; }
 
 .header {
-  padding: 5px 10px;
+  padding: 7px 10px 8px;
   text-align: justify;
   text-justify: distribute-all-lines;
   font-size: 0 !important; }
@@ -2810,15 +2810,19 @@ textarea {
     display: inline-block;
     width: 100%; }
   .header-logo {
+    margin-top: 5px;
     display: inline-block;
     vertical-align: middle; }
   .header__login {
     display: inline-block;
     vertical-align: middle;
     font-size: 18px; }
-    .header__login .fa-graduation-cap {
-      font-size: 32px;
+    .header__login .fa.fa-graduation-cap {
+      font-size: 18px;
       color: #333; }
+      .header__login .fa.fa-graduation-cap:before {
+        position: relative;
+        top: -3px; }
     .header__login:hover {
       color: #1a76d1; }
       .header__login:hover .fa-graduation-cap {
@@ -2831,13 +2835,12 @@ textarea {
   .header__title {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 55px;
+    margin-right: 70px;
     color: #1a76d1;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 600;
     text-transform: uppercase;
-    -webkit-transform: translateX(-5%);
-    -ms-transform: translateX(-5%);
-    transform: translateX(-5%); }
+    text-decoration: none; }
   .header__link {
     color: #000; }
     .header__link:hover {
@@ -2876,7 +2879,7 @@ textarea {
     font-size: 22px;
     text-transform: uppercase; }
   .top-menu__link {
-    padding: 14px 45px;
+    padding: 14px 30px;
     display: inline-block;
     color: #fff;
     text-decoration: none;
@@ -2905,14 +2908,14 @@ textarea {
       position: relative;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      margin: 2px 2px;
+      margin: 2px 2px 4px 2px;
       display: inline-block; }
       .professions-list__item:after {
         position: absolute;
         content: "";
-        bottom: 0;
+        bottom: 0px;
         left: 0;
-        height: 28px;
+        height: 30px;
         width: 300px;
         background-color: #fff;
         opacity: .7;
@@ -2923,7 +2926,8 @@ textarea {
         box-sizing: border-box;
         border: 4px solid #1a76d1;
         border-bottom: none;
-        margin: -2px -2px 2px -2px; }
+        margin: -2px -2px 2px -2px;
+        padding-bottom: 2px; }
         .professions-list__item:hover:after {
           background-color: #1a76d1; }
         .professions-list__item:hover .profession__name {
@@ -2936,8 +2940,9 @@ textarea {
 
 .profession__name {
   position: relative;
-  padding: 5px 0;
-  margin-top: -30px;
+  padding: 9px 0;
+  margin-top: -34px;
+  font-size: 11px;
   color: #333;
   font-weight: 600;
   text-transform: uppercase;
@@ -3165,11 +3170,11 @@ textarea {
       color: #1a76d1; }
 
 .footer-contacts {
-  padding: 10px 0;
   margin-bottom: 15px;
   text-align: center;
   background-color: #1a76d1; }
   .footer-contacts__phone {
+    padding: 14px 5px;
     color: #fff; }
 
 .footer-copyright {
@@ -3202,8 +3207,9 @@ textarea {
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1211px) {
+@media only screen and (max-width: 1229px) {
   .professions-list__item:last-child {
+    padding-bottom: 0;
     margin-bottom: 4px; } }
 
 /* Large Devices, Wide Screens */
@@ -3214,12 +3220,10 @@ textarea {
 @media only screen and (max-width: 992px) {
   /**/ }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 750px) {
   .header-logo {
     float: left;
     display: block;
-    padding-top: 10px;
-    padding-left: 10px;
     text-align: left; }
   .header__title {
     display: none;
@@ -3235,16 +3239,17 @@ textarea {
     float: right; }
     .header-menu__link {
       display: block;
-      margin-top: 25px;
+      margin-top: 15px;
       margin-right: 10px;
-      font-size: 32px;
+      font-size: 24px;
       color: #111; }
       .header-menu__link:hover {
         color: #1a76d1; }
   .top-menu__title {
-    font-size: 16px;
+    display: block;
     padding: 14px 25px;
-    display: block; }
+    font-size: 16px;
+    text-decoration: none; }
   .top-menu__link {
     display: none;
     padding: 14px 50px; }
@@ -3279,7 +3284,8 @@ textarea {
   .professions-list__item:hover {
     margin-bottom: 2px; }
   .professions-list__item:last-child {
-    margin-bottom: 2px; } }
+    padding-bottom: 0;
+    margin-bottom: 4px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
