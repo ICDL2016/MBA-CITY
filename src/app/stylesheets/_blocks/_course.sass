@@ -1,6 +1,30 @@
+.course
+  &__title
+    padding: 10px
+    color: $accent-color
+    font-size: 18px
+    font-weight: 600
+    text-align: center
+    text-transform: uppercase
+
 .course-info
   &__wrapper
   @include clearfix
+
+  &__title
+    padding-top: 20px
+    padding-bottom: 20px
+    font-size: 18px
+    color: $accent-color
+    font-weight: 400
+    text-align: center
+
+  &__sub
+    padding-top: 10px
+    padding-bottom: 10px
+    font-size: 18px
+    color: $sub-color
+    text-align: center
 
 .price
   position: absolute
@@ -10,7 +34,7 @@
   &-study
     max-width: 300px
     min-width: 300px
-    margin: 0 auto
+    margin: 0 auto 10px
 
     &__item
       @include clearfix
@@ -105,13 +129,35 @@
     &__btn
       width: 100%
       margin-top: -3.5px
-      font-size: 24px
+      font-size: 20px
+      font-weight: 300
       padding: 5px 0
       color: #fff
       background-color: $accent-color
       border: none
+      border-radius: 4px
       outline: none
       cursor: pointer
+
+      &:hover
+        background-color: lighten($accent-color, 10%)
+
+
+.price-discount
+  &__img
+    display: inline-block
+    vertical-align: top
+
+  &__text
+    display: inline-block
+    margin-top: 30px
+    width: 200px
+    text-align: center
+    font-size: 14px
+    font-weight: 300
+    color: $accent-color
+    vertical-align: top
+
 
 .course-info
   margin-left: 310px
@@ -120,13 +166,73 @@
   padding: 0 10px
   box-sizing: border-box
 
+  &--stretch
+    margin-left: 0
+
   &__text
     margin-top: 0
-    line-height: 1.5
-    font-size: 18px
+    line-height: 1.2
+    font-size: 16px
     color: $sub-color
     text-align: justify
 
   &__gallery
     padding: 10px 0
     text-align: center
+
+
+.courses
+
+.courses-table
+  margin: 0 auto 10px
+  width: 100%
+
+  &__title
+    padding: 15px 35px
+    background-color: $accent-color
+    vertical-align: top
+    color: #fff
+    font-weight: 400
+
+  &__sub-title
+    font-size: 12px
+
+  &__cell
+    min-height: 50px
+    height: 50px
+    padding: 10px
+    text-align: center
+    color: #0084d1
+
+  &__name
+    font-weight: 600
+
+  &__old
+    font-size: 14px
+    font-weight: 300
+    text-decoration: line-through
+
+  &__new
+    font-size: 18px
+    font-weight: 600
+    
+  &__btn
+    display: inline-block
+    margin-top: 5px
+    padding: 5px
+    background-color: $accent-color
+    color: #fff
+    cursor: pointer
+    text-decoration: none
+    border-radius: 4px
+
+    &:hover
+      background-color: lighten($accent-color, 5%)
+
+  tbody tr
+    &:nth-child(odd)
+        background-color: #e4e4e4
+
+    &:nth-child(even)
+        background-color: #f0f0f0
+

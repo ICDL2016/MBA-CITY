@@ -2835,7 +2835,7 @@ textarea {
   .header__title {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 70px;
+    margin-right: 170px;
     color: #1a76d1;
     font-size: 18px;
     font-weight: 600;
@@ -2868,6 +2868,39 @@ textarea {
     display: block;
     background: no-repeat center center;
     background-size: cover; }
+
+.login {
+  text-align: center; }
+  .login__title {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a76d1; }
+  .login__input {
+    display: block;
+    margin: 0 auto 15px;
+    padding: 5px 10px;
+    width: 250px;
+    border: 1px solid #1a76d1; }
+  .login__btn {
+    display: block;
+    padding: 10px 10px;
+    margin: 0 auto 15px;
+    width: 272px;
+    color: #fff;
+    background-color: #1a76d1;
+    border: none;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer; }
+    .login__btn:hover {
+      background-color: #388fe6; }
+  .login__link {
+    color: #9a9a9a;
+    text-decoration: none; }
+    .login__link:hover {
+      text-decoration: underline; }
 
 .top-menu {
   margin: 0 auto 5px;
@@ -2948,10 +2981,33 @@ textarea {
   text-transform: uppercase;
   z-index: 1; }
 
+.course__title {
+  padding: 10px;
+  color: #1a76d1;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase; }
+
 .course-info::after {
   clear: both;
   content: "";
   display: table; }
+
+.course-info__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  color: #1a76d1;
+  font-weight: 400;
+  text-align: center; }
+
+.course-info__sub {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #9a9a9a;
+  text-align: center; }
 
 .price {
   position: absolute;
@@ -2960,7 +3016,7 @@ textarea {
   .price-study {
     max-width: 300px;
     min-width: 300px;
-    margin: 0 auto; }
+    margin: 0 auto 10px; }
     .price-study__item {
       text-align: center;
       margin-bottom: 3px; }
@@ -3051,13 +3107,32 @@ textarea {
     .price-study__btn {
       width: 100%;
       margin-top: -3.5px;
-      font-size: 24px;
+      font-size: 20px;
+      font-weight: 300;
       padding: 5px 0;
       color: #fff;
       background-color: #1a76d1;
       border: none;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
       outline: none;
       cursor: pointer; }
+      .price-study__btn:hover {
+        background-color: #388fe6; }
+
+.price-discount__img {
+  display: inline-block;
+  vertical-align: top; }
+
+.price-discount__text {
+  display: inline-block;
+  margin-top: 30px;
+  width: 200px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: #1a76d1;
+  vertical-align: top; }
 
 .course-info {
   margin-left: 310px;
@@ -3066,15 +3141,60 @@ textarea {
   padding: 0 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  .course-info--stretch {
+    margin-left: 0; }
   .course-info__text {
     margin-top: 0;
-    line-height: 1.5;
-    font-size: 18px;
+    line-height: 1.2;
+    font-size: 16px;
     color: #9a9a9a;
     text-align: justify; }
   .course-info__gallery {
     padding: 10px 0;
     text-align: center; }
+
+.courses-table {
+  margin: 0 auto 10px;
+  width: 100%; }
+  .courses-table__title {
+    padding: 15px 35px;
+    background-color: #1a76d1;
+    vertical-align: top;
+    color: #fff;
+    font-weight: 400; }
+  .courses-table__sub-title {
+    font-size: 12px; }
+  .courses-table__cell {
+    min-height: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    color: #0084d1; }
+  .courses-table__name {
+    font-weight: 600; }
+  .courses-table__old {
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: line-through; }
+  .courses-table__new {
+    font-size: 18px;
+    font-weight: 600; }
+  .courses-table__btn {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #1a76d1;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+    .courses-table__btn:hover {
+      background-color: #2183e3; }
+  .courses-table tbody tr:nth-child(odd) {
+    background-color: #e4e4e4; }
+  .courses-table tbody tr:nth-child(even) {
+    background-color: #f0f0f0; }
 
 .contacts {
   text-align: center;
@@ -3121,24 +3241,37 @@ textarea {
     left: 0;
     height: 30px;
     width: inherit;
-    background-color: #1a76d1;
-    opacity: .7; }
+    background-color: #1a76d1; }
   .operator__name {
     position: relative;
     margin-top: -27px;
-    color: #333;
+    color: #fff;
     font-weight: 600;
     z-index: 1; }
 
 .about {
   padding: 0 10px;
   margin-bottom: 10px; }
+  .about__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #1a76d1;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; }
   .about__text {
     font-size: 18px;
     padding: 10px 0;
     line-height: 1.5;
     color: #9a9a9a;
     text-align: justify; }
+
+.footer--bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
 
 .footer__title {
   text-align: center;

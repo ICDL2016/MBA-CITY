@@ -11,14 +11,4 @@ $(document).ready(function () {
     $('.top-menu').toggleClass('active');
   })
 
-
 });
-//
-// $(document).on('click', function(e) {
-//   if (!$(e.target).closest('.top-menu').length) {
-//
-//     console.log($(e.target).closest('.top-menu__link').length)
-//   } else {
-//     $('.top-menu').removeClass('active')
-//   }
-// });
