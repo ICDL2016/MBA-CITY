@@ -8,13 +8,12 @@ const ghPages = require('gulp-gh-pages');
 
 gulp.task('watch', function () {
   gulp.watch('src/app/*.html', ['html']);
-  gulp.watch('src/app/stylesheets/*.sass', ['styles']);
-  gulp.watch('src/app/stylesheets/*/*.sass', ['styles']);
+  gulp.watch('src/app/stylesheets/**/*', ['styles']);
   gulp.watch('src/app/js/*.js', ['scripts']);
 });
 
 gulp.task('styles', function () {
-  gulp.src('src/app/stylesheets/*.sass')
+  gulp.src('src/app/stylesheets/**/*')
     .pipe(sass({
       includePaths: require("bourbon").includePaths
     }).on('error', sass.logError, notify("Error")))
