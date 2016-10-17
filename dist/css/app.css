@@ -3203,14 +3203,15 @@ th {
     font-size: 18px; }
     .header__login .fa.fa-graduation-cap {
       font-size: 18px;
-      color: #333; }
+      color: #1a76d1; 
+	  transition: 0.3s;}
       .header__login .fa.fa-graduation-cap:before {
         position: relative;
         top: -3px; }
     .header__login:hover {
       color: #1a76d1; }
       .header__login:hover .fa-graduation-cap {
-        color: #1a76d1; }
+        color: #369bff; }
   .header__text {
     position: relative;
     display: inline-block;
@@ -3225,10 +3226,18 @@ th {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none; }
+	  .header__title a {
+		  text-decoration: none;
+		  color: #1a76d1;
+		  transition: 0.3s;
+	  }
+	  .header__title a:hover {
+		  color: #369bff;
+	  }
   .header__link {
-    color: #000; }
+    color: #1a76d1; }
     .header__link:hover {
-      color: #1a76d1; }
+      color: #369bff; }
     .header__link--sub {
       text-transform: none; }
 
@@ -3364,8 +3373,8 @@ th {
   position: relative;
   padding: 9px 0;
   margin-top: -34px;
-  font-size: 11px;
-  color: #333;
+  font-size: 15px;
+  color: #1a76d1;
   font-weight: 600;
   text-transform: uppercase;
   z-index: 1; }
@@ -3489,7 +3498,7 @@ th {
       padding-bottom: 5px;
       padding-left: 5px;
       font-size: 16px;
-      color: #9a9a9a;
+      color: #666;
       border: 2px solid #1a76d1;
       outline: none;
       resize: none; }
@@ -4042,7 +4051,7 @@ input:not([type="submit"]), textarea {
   text-align: center; }
   .footer-copyright__years {
     color: #9a9a9a;
-    margin-bottom: 15px; }
+    padding: 15px 0;  }
 
 .social-menu {
   padding-left: 0;
@@ -4079,6 +4088,9 @@ input:not([type="submit"]), textarea {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+	.header__title {
+		margin-right: 50px;
+	}
   /**/ }
 
 @media only screen and (max-width: 750px) {
@@ -4132,7 +4144,9 @@ input:not([type="submit"]), textarea {
     position: static;
     margin: 0 auto; }
   .course-info {
-    margin-left: 0; } }
+    margin-left: 0; } 
+	
+	}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 608px) {
