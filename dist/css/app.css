@@ -5259,7 +5259,149 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	font-size: 18px;
 	color: #808080;
 	line-height: 1.5;
+	list-style: none;
 }
+
+.page__title {
+	text-align: center;
+	color: #fff;
+	line-height: 1;
+	padding: 10px 0;
+	display: block;
+	font-size: 21px;
+}
+
+.marketing__research_sidebar {
+	background: #a92427;
+	max-width: 315px;
+	float: left;
+}
+
+.marketing__research_sidebar ul li {
+	list-style: none;
+}
+
+.sidebar__title {
+	text-transform: uppercase;
+	color: #fff;
+	padding: 12px 10px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+	background: #c0040e;
+}
+
+.marketing__research_content {
+	padding: 0 15px 15px 315px;
+}
+
+.marketing__research_content p {
+	color: #8c1021;
+	font-weight: bold;
+}
+
+.select__curs_btn {
+	font-size: 22px;
+	color: #8c1021;
+	font-weight: bold;
+	margin: 15px 0;
+	display: inline-block;
+	background: url("../images/play.jpg") no-repeat left center;
+	padding-left: 26px;
+}
+
+.prep {
+	margin-left: 20px;
+	color: #8c1021;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.testing__table {
+	width: 100%;
+	color: #8c1021;
+	font-weight: bold;
+}
+
+.testing__table td {
+	padding: 10px;
+	border: 1px solid #8c1021;
+}
+
+.testing__table td a {
+	color: #8c1021;
+}
+
+.chapter__title {
+	color: #8c1021;
+}
+
+.prep li {
+	margin: 5px 0;
+}
+
+.prep ul {
+	margin-left: 20px;
+}
+
+.marketing__research {
+	overflow: hidden;
+}
+
+.sidebar__title i {
+	margin-right: 5px;
+}
+
+ul.accordion__menu  {
+	list-style:none;
+	padding: 0 0 15px;
+}
+
+ul.accordion__menu>li {
+	padding: 5px 10px;
+}
+
+ul.accordion__menu>li:hover {
+	background: #c0040e;
+}
+
+ul.accordion__menu>li>a {
+	background: url("../images/close__p.jpg") no-repeat left 8px;
+}
+
+ul.accordion__menu>li>a.open {
+	background: url("../images/open__p.jpg") no-repeat left 8px;
+}
+
+ul.accordion__menu>li>ul>li>a {
+	background: url("../images/close__p.jpg") no-repeat left 8px;
+}
+
+ul.accordion__menu>li>ul>li>a.open {
+	background: url("../images/open__p.jpg") no-repeat left 8px;
+}
+
+ul.accordion__menu>li>ul>li>ul>li a {
+	background: url("../images/file.jpg") no-repeat left 8px;
+}
+
+ul.accordion__menu li a {
+	color: #fff;
+	font-size: 15px;
+}
+
+ul.accordion__menu li a {
+	padding: 5px 0 5px 22px;
+	display:block;
+	text-decoration:none;
+}
+
+ul.accordion__menu ul  {
+	margin: 0 0 0 20px;
+	display:none;
+}
+
+
 
 .footer--bottom {
 	position: absolute;
@@ -5357,6 +5499,20 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 .social-menu__icon {
 	color: #fff;
 	vertical-align: middle;
+}
+
+.score__blocks img {
+	width: 100%;
+	max-width: 775px;
+	display: block;
+	margin: 0 auto;
+}
+
+.score__blocks h1 {
+	text-align: center;
+	color: #1975d1;
+	margin-bottom: 15px;
+	font-size: 25px;
 }
 
 /*==========  Desktop First Method  ==========*/
@@ -5466,19 +5622,14 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	.course-info {
 		margin-left: 0;
 	}
-	
-	.mba__city,
-	.mba__city thead,
-	.mba__city tbody,
-	.mba__city tfoot,
-	.mba__city tr,
-	.mba__city td {
-		display: block;
-		font-size: 15px;
+
+	.marketing__research_sidebar {
+		float: none;
+		margin: 0 auto;
 	}
-	
-	.mba__city td {
-		padding: 5px 10px;
+
+	.marketing__research_content {
+		padding: 15px;
 	}
 }
 
