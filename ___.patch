@@ -1,0 +1,17 @@
+Index: dist/css/app.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- dist/css/app.css	(date 1476900493000)
++++ dist/css/app.css	(revision )
+@@ -5507,7 +5507,7 @@
+ 	display: block;
+ 	margin: 0 auto;
+ }
+-
++ 
+ .score__blocks h1 {
+ 	text-align: center;
+ 	color: #1975d1;
+\ No newline at end of file
