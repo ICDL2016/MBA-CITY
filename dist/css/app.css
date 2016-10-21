@@ -4371,7 +4371,12 @@ td,th {
 .courses-table__cell:first-child {
 	text-align: left;
 }
-
+.courses-table__cell a {
+	text-decoration: none;
+}
+.courses-table__cell a:hover {
+	color: #5ba0e5;
+}
 .courses-table__name {
 	font-weight: 600;
 }
@@ -4379,7 +4384,19 @@ td,th {
 .courses-table__old {
 	font-size: 14px;
 	font-weight: 300;
-	text-decoration: line-through;
+	position: relative;
+}
+
+.courses-table__old:before {
+	content: '';
+	display: block;
+	width: 80px;
+	height: 1px;
+	border-top: 1px solid #1a76d1;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	position: absolute;
 }
 
 .courses-table__new {
