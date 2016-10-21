@@ -5035,7 +5035,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .inside__block-blue .inside__block-blue-title {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 13px;
 	height: 45px;
 	display: table-cell;
 	vertical-align: middle;
@@ -5046,10 +5046,14 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	padding: 5px 0;
 }
 
+.inside__block-blue .course-item__price {
+	padding-top: 10px;
+}
+
 .inside__block-blue .inside__item-id span {
 	display: block;
 	padding-top: 2px;
-	font-size: 13px;
+	font-size: 11px;
 }
 
 .inside__block-blue .inside__item-id a {
@@ -5333,18 +5337,18 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	text-align: center;
 }
 
-.main {
+.marketing__research__block {
 	text-align: justify;
 	margin-top: 5px;
 }
 
-.courses {
+.marketing__research__block .courses {
 	display: table;
 	width: 100%;
 	margin-top: -5px;
 }
 
-.courses__left {
+.marketing__research__block .courses__left {
 	display: table-cell;
 	padding: 0px 0 20px;
 	width: 260px;
@@ -5353,7 +5357,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	vertical-align: top;
 }
 
-.courses__title {
+.marketing__research__block .courses__title {
 	padding: 10px;
 	font-size: 15px;
 	line-height: 17px;
@@ -5362,36 +5366,36 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	text-decoration: none;
 }
 
-.sublist, .sub-list, .courses-list {
+.marketing__research__block .sublist, .sub-list, .courses-list {
 	padding-left: 0;
 	margin: 0;
 	list-style: none;
 }
 
-.courses-list__link {
+.marketing__research__block .courses-list__link {
 	display: block;
 	padding: 6px 10px 5px;
 	color: #fff;
 	text-decoration: none;
 }
 
-.courses-list__item_active .courses-list__link {
+.marketing__research__block .courses-list__item_active .courses-list__link {
 	background: #0f59a2;
 }
-.sub-list__link:hover, .sub-list__link_active {
+.marketing__research__block .sub-list__link:hover, .sub-list__link_active {
 	background: #0f59a2;
 	color: #fff;
 }
-.courses-list__link:hover {
+.marketing__research__block .courses-list__link:hover {
 	background: #0f59a2;
 }
-.sublist, .sub-list, .courses-list {
+.marketing__research__block .sublist, .sub-list, .courses-list {
 	padding-left: 0;
 	margin: 0;
 	list-style: none;
 }
 
-.sub-list__link {
+.marketing__research__block .sub-list__link {
 	display: block;
 	color: #fff;
 	text-decoration: none;
@@ -5400,12 +5404,12 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	line-height: 15px;
 }
 
-.sub-list__link .sub-list__title {
+.marketing__research__block .sub-list__link .sub-list__title {
 	margin-left: 20px;
 	display: block;
 }
 
-.sub-list__link {
+.marketing__research__block .sub-list__link {
 	display: block;
 	color: #fff;
 	text-decoration: none;
@@ -5414,16 +5418,16 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	line-height: 15px;
 }
 
-.sublist, .sub-list, .courses-list {
+.marketing__research__block .sublist, .sub-list, .courses-list {
 	padding-left: 0;
 	margin: 0;
 	list-style: none;
 }
 
-.sub-list .sub-list .sub-list__link {
+.marketing__research__block .sub-list .sub-list .sub-list__link {
 	padding: 5px 15px 5px 50px;
 }
-.sub-list__link {
+.marketing__research__block .sub-list__link {
 	display: block;
 	color: #fff;
 	text-decoration: none;
@@ -5432,64 +5436,64 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	line-height: 15px;
 }
 
-.courses__right {
+.marketing__research__block .courses__right {
 	padding: 10px;
 	display: table-cell;
 }
 
 
-.courses__description {
+.marketing__research__block .courses__description {
 	font-size: 17px;
 	line-height: 20px;
 }
 
-.courses__right a {
+.marketing__research__block .courses__right a {
 	color: #1a76d1;
 }
 
-.course-nav__title {
+.marketing__research__block .course-nav__title {
 	font-weight: bold;
 	font-size: 20px;
 	margin-bottom: 10px;
 	color: #1a76d1;
 }
-.course-nav {
+.marketing__research__block .course-nav {
 	margin-top: 30px;
 }
-.start-course {
+.marketing__research__block .start-course {
 	font-size: 22px;
 	line-height: 28px;
 }
-.course-nav__list {
+.marketing__research__block .course-nav__list {
 	margin-left: 20px;
 	color: #1a76d1;
 }
-.course-nav__list li {
+.marketing__research__block .course-nav__list li {
 	margin-bottom: 5px;
 }
-.start-course i {
+.marketing__research__block .start-course i {
 	margin-right: 5px;
 }
-.courses__right a {
+.marketing__research__block .courses__right a {
 	color: #1a76d1;
 }
-.course-pagination {
+.marketing__research__block .course-pagination {
 	margin: 15px 0 10px;
 }
-.courses__description {
+.marketing__research__block .courses__description {
 	font-size: 17px;
 	line-height: 20px;
 	margin-bottom: 15px;
 }
-.course-nav__item_contain {
+.marketing__research__block .course-nav__item_contain {
 	list-style-type: none;
 }
 
-.overflow-wrap {
+.marketing__research__block .overflow-wrap {
 	overflow-x: scroll;
 }
 
-table.learn-gradebook-table {
+.marketing__research__block table.learn-gradebook-table {
 	width: 100%;
 	background-color: #F9FAFB;
 	border-collapse: collapse;
@@ -5497,36 +5501,36 @@ table.learn-gradebook-table {
 	color: #1a76d1;
 }
 
-table.learn-gradebook-table th, table.learn-gradebook-table td {
+.marketing__research__block table.learn-gradebook-table th, table.learn-gradebook-table td {
 	border: 1px solid #ADC3D5;
 	padding: 3px 5px;
 	vertical-align: top;
 }
-table.learn-gradebook-table th {
+.marketing__research__block table.learn-gradebook-table th {
 	text-align: left;
 	color: #25639A;
 }
-.learn-gradebook-table th, .learn-gradebook-table td {
+.marketing__research__block .learn-gradebook-table th, .learn-gradebook-table td {
 	border-color: #1a76d1 !important;
 }
 
-.courses-list .fa {
+.marketing__research__block .courses-list .fa {
 	float: left;
 }
 
-.sub-list__link .fa {
+.marketing__research__block .sub-list__link .fa {
 	font-size: 15px;
 }
 
 
-.courses-list__title {
+.marketing__research__block .courses-list__title {
 	display: block;
 	margin-left: 20px;
 	font-size: 12px;
 	line-height: 15px;
 }
 
-.sub-list__link .sub-list__title {
+.marketing__research__block .sub-list__link .sub-list__title {
 	margin-left: 20px;
 	display: block;
 }
