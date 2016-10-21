@@ -3900,7 +3900,7 @@ td,th {
 
 .gallery__item {
 	display: inline-block;
-	padding: 10px 0;
+	padding: 2px;
 }
 
 .gallery--w300 .gallery__img {
@@ -4461,7 +4461,12 @@ td,th {
 
 .personal__area {
 	padding: 0 10px;
-	margin-bottom: 10px;
+	margin: 0 auto 10px;
+}
+
+.personal__area .about__text {
+	font-size: 15px;
+	line-height: 1.2;
 }
 
 .about__title {
@@ -4999,6 +5004,15 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	padding: 15px 0;
 }
 
+.curs__info_blocks .inside__block a {
+	text-decoration: none;
+	display: block;
+}
+
+.curs__info_blocks .inside__block a:hover .inside__block-blue {
+	background: #2e95fb;
+}
+
 .pr__area_title {
 	background: #808080;
 	padding: 9px 0 7px;
@@ -5006,7 +5020,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	text-align: center;
 	color: #fff;
 	line-height: 1;
-	font-size: 22px;
+	font-size: 15px;
 }
 
 .inside__block-blue {
@@ -5014,12 +5028,13 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	color: #fff;
 	text-align: center;
 	padding: 10px;
+	transition: 0.3s;
 }
 
 .inside__block-blue .inside__block-blue-title {
 	font-weight: bold;
-	font-size: 18px;
-	height: 60px;
+	font-size: 16px;
+	height: 40px;
 	display: table-cell;
 	vertical-align: middle;
 	width: 1000px;
@@ -5032,26 +5047,27 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 .inside__block-blue .inside__item-id span {
 	display: block;
 	padding-top: 5px;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .inside__block-blue .inside__item-id a {
 	color: #fff;
 	display: inline-block;
-	padding-top: 10px;
-	font-size: 26px;
+	padding-top: 7px;
+	font-size: 17px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: bold;
 }
 
-.inside__block-blue .inside__item-id a:hover {
-	text-decoration: underline;
+.inside__block {
+	width: 300px;
+	float: left;
 }
 
-.inside__block {
-	max-width: 300px;
-	float: left;
+.inside__block-blue .inside__item-id .pay__span {
+	font-weight: bold;
+	font-size: 16px;
 }
 
 .inside__block:last-child {
@@ -5068,7 +5084,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 .support__service .tel {
 	display: block;
 	text-align: center;
-	font-size: 30px;
+	font-size: 21px;
 	font-weight: bold;
 	color: #1975d1;
 	padding: 15px 0 20px;
@@ -5077,7 +5093,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 .support__service .consult__person {
 	display: block;
 	text-align: center;
-	font-size: 21px;
+	font-size: 16px;
 	color: #808080;
 	padding: 0 0 30px;
 }
@@ -5120,12 +5136,11 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	color: #fff;
 	text-decoration: none;
 	width: 100%;
-	max-width: 390px;
+	max-width: 280px;
 	margin: 25px auto;
 	text-align: center;
-	font-size: 20px;
-	padding: 12px 0;
-	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px 0 8px;
 	transition: 0.3s;
 }
 
@@ -5151,7 +5166,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 .mba__city thead, .mba__city tfoot {
 	background: #215fc6;
 	color: #fff;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .mba__city td {
@@ -5160,7 +5175,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .mba__city tbody {
 	color: #215fc6;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 500;
 }
 
@@ -5170,8 +5185,9 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .contact__form {
 	background: #215fc6;
-	margin: 50px 0 0;
+	margin: 50px auto 0;
 	padding: 15px;
+	max-width: 1000px;
 }
 
 .contact__form  .massage__title {
@@ -5207,20 +5223,21 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	float: left;
 	width: 29%;
 	padding-right: 1%;
+	font-size: 14px;
 }
 
 .form__contact_block label input[type='text'] {
 	width: 70%;
 	float: left;
 	border: none;
-	height: 30px;
+	height: 23px;
 }
 
 .form__contact_block label textarea {
 	width: 70%;
 	float: left;
 	border: none;
-	height: 300px;
+	height: 180px;
 }
 
 .form__contact_block label input[type='file'] {
@@ -5233,17 +5250,22 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .send__btn {
 	display: block;
-    background: #1975d1;
-    color: #fff;
-    text-decoration: none;
-    width: 100%;
-    max-width: 390px;
-    margin: 15px auto;
-    text-align: center;
-    font-size: 20px;
-    padding: 12px 0;
-    border-radius: 5px;
-    transition: 0.3s;
+	background: #1975d1;
+	color: #fff;
+	text-decoration: none;
+	width: 100%;
+	max-width: 240px;
+	margin: 15px auto;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px 0 8px;
+	transition: 0.3s;
+}
+
+.page__table {
+	overflow-y: auto;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .send__btn:hover {
@@ -5604,10 +5626,7 @@ ul.accordion__menu ul  {
 		display: block;
 		margin: 0 auto;
 	}
-	
-	.inside__block {
-		max-width: 49%;
-	}
+
 	
 	
 }
@@ -5631,6 +5650,16 @@ ul.accordion__menu ul  {
 	.marketing__research_content {
 		padding: 15px;
 	}
+
+	.inside__block {
+		width: 300px;
+		float: none;
+		margin: 0 auto 15px;
+	}
+
+	.inside__block:last-child {
+		float: none;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -5640,15 +5669,7 @@ ul.accordion__menu ul  {
 		margin-bottom: 10px;
 	}
 	
-	.inside__block {
-		max-width: 50%;
-		float: none;
-		margin: 0 auto 15px;
-	}
-	
-	.inside__block:last-child {
-		float: none;
-	}
+
 }
 
 /* Small Devices, Tablets */
@@ -5683,10 +5704,6 @@ ul.accordion__menu ul  {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 	/**/
-	.inside__block {
-		max-width: 100%;
-		width: 100%;
-	}
 	
 	.inside__block  img {
 		max-width: 100%;
