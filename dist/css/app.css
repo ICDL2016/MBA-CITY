@@ -5086,7 +5086,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	text-align: center;
 	font-size: 21px;
 	font-weight: bold;
-	color: #1975d1;
+	color: #1a76d1;
 	padding: 15px 0 20px;
 }
 
@@ -5123,7 +5123,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	color: #fff;
 	line-height: 1;
 	padding: 7px 0;
-	background: #1975d1;
+	background: #1a76d1;
 }
 
 .consultants__block  .consilt__item .inside__consilt {
@@ -5132,7 +5132,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .questions__answers {
 	display: block;
-	background: #1975d1;
+	background: #1a76d1;
 	color: #fff;
 	text-decoration: none;
 	width: 100%;
@@ -5159,12 +5159,12 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 .mba__city {
 	width: 100%;
 	background: #fff;
-	border: 1px solid #215fc6;
+	border: 1px solid #1a76d1;
 	line-height: 1;
 }
 
 .mba__city thead, .mba__city tfoot {
-	background: #215fc6;
+	background: #1a76d1;
 	color: #fff;
 	font-size: 14px;
 }
@@ -5174,17 +5174,17 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 }
 
 .mba__city tbody {
-	color: #215fc6;
+	color: #1a76d1;
 	font-size: 14px;
 	font-weight: 500;
 }
 
 .mba__city tbody td {
-	border-left: 1px solid #215fc6;
+	border-left: 1px solid #1a76d1;
 }
 
 .contact__form {
-	background: #215fc6;
+	background: #1a76d1;
 	margin: 50px auto 0;
 	padding: 15px;
 	max-width: 1000px;
@@ -5250,7 +5250,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .send__btn {
 	display: block;
-	background: #1975d1;
+	background: #1a76d1;
 	color: #fff;
 	text-decoration: none;
 	width: 100%;
