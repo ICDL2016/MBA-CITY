@@ -5422,6 +5422,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	padding-left: 0;
 	margin: 0;
 	list-style: none;
+	text-align: left;
 }
 
 .marketing__research__block .sub-list .sub-list .sub-list__link {
