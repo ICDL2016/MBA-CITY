@@ -5447,15 +5447,15 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	line-height: 20px;
 }
 
-.marketing__research__block .courses__right a {
-	color: #1a76d1;
+.marketing__research__block .courses__description {
+	color: #0f59a2;
 }
 
 .marketing__research__block .course-nav__title {
 	font-weight: bold;
 	font-size: 20px;
 	margin-bottom: 10px;
-	color: #1a76d1;
+	color: #0f59a2;
 }
 .marketing__research__block .course-nav {
 	margin-top: 30px;
@@ -5475,7 +5475,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	margin-right: 5px;
 }
 .marketing__research__block .courses__right a {
-	color: #1a76d1;
+	color: #0f59a2;
 }
 .marketing__research__block .course-pagination {
 	margin: 15px 0 10px;
@@ -5498,7 +5498,12 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	background-color: #F9FAFB;
 	border-collapse: collapse;
 	font-size: 100%;
-	color: #1a76d1;
+	color: #0f59a2;
+}
+
+.marketing__research__block table.learn-gradebook-table a:hover,
+.marketing__research__block .courses__right a:hover {
+	color: #59a1e9;
 }
 
 .marketing__research__block table.learn-gradebook-table th, table.learn-gradebook-table td {
@@ -5681,6 +5686,8 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	.header__title {
 		margin-right: 50px;
 	}/**/
+
+
 	
 }
 
@@ -5767,15 +5774,15 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	}
 
 
-	.courses {
+	.marketing__research__block .courses {
 		display: block;
 		height: auto !important;
 	}
-	.courses__left {
+	.marketing__research__block .courses__left {
 		display: block;
 		width: 100%;
 	}
-	.courses__right {
+	.marketing__research__block .courses__right {
 		display: block;
 	}
 	.inside__block {
