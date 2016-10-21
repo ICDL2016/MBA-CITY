@@ -4113,14 +4113,15 @@ td,th {
 }
 
 .course-info__title {
-	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 18px;
 	color: #1a76d1;
 	font-weight: 400;
 	text-align: center;
 }
-
+.reset__wr_block {
+	padding: 10px 10px;
+}
 .course-info__sub {
 	padding-top: 10px;
 	padding-bottom: 10px;
