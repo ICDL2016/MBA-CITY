@@ -4294,9 +4294,7 @@ td,th {
 
 .course-info {
 	margin-left: 310px;
-	margin-top: 10px;
 	margin-bottom: 15px;
-	padding: 0 10px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -4311,6 +4309,31 @@ td,th {
 	font-size: 16px;
 	color: #9a9a9a;
 	text-align: justify;
+}
+.table__div {
+	overflow-y: auto;
+}
+.course__update {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px 10px;
+}
+
+.course__update .gallery {
+	padding-top: 5px;
+}
+
+.courses {
+	margin-top: 15px;
+}
+
+.update__courses_title {
+	display: block;
+	text-align: center;
+	line-height: 1.2;
+	font-size: 16px;
+	color: #9a9a9a;
+	padding-bottom: 10px;
 }
 
 .course-info__gallery {
@@ -4329,6 +4352,7 @@ td,th {
 	vertical-align: top;
 	color: #fff;
 	font-weight: 400;
+	border: 1px solid #fff;
 }
 
 .courses-table__sub-title {
@@ -4341,6 +4365,11 @@ td,th {
 	padding: 10px;
 	text-align: center;
 	color: #0084d1;
+	border: 1px solid #fff;
+}
+
+.courses-table__cell:first-child {
+	text-align: left;
 }
 
 .courses-table__name {
