@@ -4373,9 +4373,10 @@ td,th {
 }
 .courses-table__cell a {
 	text-decoration: none;
+	color: #1a76d1;
 }
 .courses-table__cell a:hover {
-	color: #5ba0e5;
+	color: #3092f2;
 }
 .courses-table__name {
 	font-weight: 600;
@@ -4390,12 +4391,12 @@ td,th {
 .courses-table__old:before {
 	content: '';
 	display: block;
-	width: 80px;
+	width: 60px;
 	height: 1px;
 	border-top: 1px solid #1a76d1;
 	left: 50%;
 	top: 50%;
-	margin-left: -40px;
+	margin-left: -30px;
 	position: absolute;
 }
 
@@ -4409,7 +4410,7 @@ td,th {
 	margin-top: 5px;
 	padding: 5px;
 	background-color: #1a76d1;
-	color: #fff;
+	color: #fff !important;
 	cursor: pointer;
 	text-decoration: none;
 	-webkit-border-radius: 4px;
