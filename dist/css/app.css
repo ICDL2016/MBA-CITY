@@ -4665,7 +4665,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 }
 
 .lc_edit h3 {
-	font-size: 21px;
+	font-size: 15px;
 	margin-bottom: 5px;
 }
 
@@ -4705,7 +4705,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 }
 
 .bill-form {
-	max-width: 320px;
+	max-width: 300px;
 	margin: 0 auto 30px;
 }
 
@@ -4765,7 +4765,9 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	margin-bottom: 20px;
 	color: #1a76d1;
 }
-
+.bill-form a:hover {
+	color: #278cef;
+}
 @media (max-width: 500px) {
 	.bill-form a {
 		position: static;
