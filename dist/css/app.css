@@ -4088,8 +4088,8 @@ td,th {
 
 .profession__name {
 	position: relative;
-	padding: 9px 0;
-	margin-top: -34px;
+	padding: 7px 0 5px;
+	margin-top: -33px;
 	font-size: 15px;
 	color: #1a76d1;
 	font-weight: 600;
