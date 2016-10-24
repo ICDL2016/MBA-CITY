@@ -4876,7 +4876,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .course-item__name {
 	font-weight: 700;
-	font-size: 19px;
+	font-size: 16px;
 	text-align: center;
 	padding: 5px 20px;
 	border-bottom: 1px solid #f1f1f1;
@@ -5045,9 +5045,18 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	border: 5px solid #1a76d1;
 }
 
+.color-blue {
+	color: #1a76d1 !important;
+}
+
+.color-blue:hover {
+	color: #278cef !important;
+	text-decoration: none;
+}
+
 .payment-type {
 	color: #777;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .color-gray {
