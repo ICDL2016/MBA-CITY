@@ -5046,7 +5046,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 }
 
 .color-blue {
-	color: #1a76d1 !important;
+	color: #777 !important;
 }
 
 .color-blue:hover {
