@@ -4831,7 +4831,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 }
 
 .pay a {
-	margin-top: 25px;
+	margin-top: 5px;
 	font-size: 14px;
 	color: #777;
 }
@@ -4877,15 +4877,14 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .course-item__name {
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 13px;
 	text-align: center;
-	padding: 5px 20px;
-	border-bottom: 1px solid #f1f1f1;
+	padding: 10px 20px 5px;
 }
 
 .course-item__price {
 	position: relative;
-	padding: 3px 0;
+	padding: 3px 0 8px;
 	text-align: center;
 }
 
