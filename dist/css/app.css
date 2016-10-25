@@ -4097,6 +4097,21 @@ td,th {
 	z-index: 1;
 }
 
+.courses-table tr td:nth-child(2),
+.courses-table tr td:nth-child(3),
+.courses-table tr td:nth-child(4),
+.courses-table tr td:nth-child(5) {
+	width: 140px;
+}
+.courses-table tr th:nth-child(2),
+.courses-table tr th:nth-child(3),
+.courses-table tr th:nth-child(4),
+.courses-table tr th:nth-child(5) {
+	width: 140px;
+}
+.courses-table tr th:nth-child(5) {
+	font-size: 13px;
+}
 .course__title {
 	padding: 10px;
 	color: #1a76d1;
@@ -4348,7 +4363,7 @@ td,th {
 }
 
 .courses-table__title {
-	padding: 15px 35px;
+	padding: 15px 5px;
 	background-color: #1a76d1;
 	vertical-align: top;
 	color: #fff;
