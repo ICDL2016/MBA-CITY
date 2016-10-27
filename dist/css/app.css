@@ -4136,11 +4136,12 @@ td,th {
 }
 
 .course-info__title {
-	padding-bottom: 20px;
-	font-size: 18px;
 	color: #1a76d1;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 20px;
 	text-align: center;
+	text-transform: uppercase;
 }
 .reset__wr_block {
 	padding: 10px 10px;
