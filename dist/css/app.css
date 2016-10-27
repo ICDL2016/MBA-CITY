@@ -3997,6 +3997,7 @@ td,th {
 
 .login__link:hover {
 	text-decoration: underline;
+	color: #2a90f4;
 }
 
 .top-menu {
