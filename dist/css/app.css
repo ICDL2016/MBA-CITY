@@ -4563,7 +4563,7 @@ td,th {
 .about__text {
 	font-size: 16px;
 	padding: 10px 0;
-	line-height: 1.5;
+	line-height: 1.4;
 	color: #9a9a9a;
 	text-align: justify;
 }
@@ -5380,7 +5380,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 	text-align: center;
 	font-size: 18px;
 	color: #808080;
-	line-height: 1.5;
+	line-height: 1.4;
 	list-style: none;
 }
 
@@ -5696,7 +5696,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 }
 
 .footer-contacts {
-	margin-bottom: 15px;
+	margin-bottom: 13px;
 	text-align: center;
 	background-color: #1a76d1;
 }
@@ -5712,7 +5712,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 .footer-copyright__years {
 	color: #9a9a9a;
-	padding: 15px 0;
+	padding: 10px 0;
 }
 
 .social-menu {
@@ -5812,7 +5812,7 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 
 	.header-menu__link {
 		display: block;
-		margin-top: 15px;
+		margin-top: 23px;
 		margin-right: 10px;
 		font-size: 24px;
 		color: #1a76d1;
