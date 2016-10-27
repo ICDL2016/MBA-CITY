@@ -4535,7 +4535,8 @@ td,th {
 
 .about {
 	padding: 0 10px;
-	margin-bottom: 10px;
+	max-width: 1000px;
+	margin: 0 auto 10px;
 }
 
 .personal__area {
@@ -4544,7 +4545,7 @@ td,th {
 }
 
 .personal__area .about__text {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.2;
 }
 
