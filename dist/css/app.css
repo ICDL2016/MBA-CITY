@@ -3837,6 +3837,7 @@ td,th {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 18px;
+	padding-top: 8px;
 }
 
 .header__login .fa.fa-graduation-cap {
@@ -3934,12 +3935,13 @@ td,th {
 
 .price-discount {
 	overflow: hidden;
+	padding-top: 5px;
 }
 
 .price-discount img {
 	float: left;
 	height: auto;
-	width: 100px;
+	width: 110px;
 }
 
 .course__wrapper {
@@ -4310,13 +4312,14 @@ td,th {
 
 .price-discount__text {
 	display: inline-block;
-	margin-top: 30px;
-	width: 200px;
+	margin-top: 40px;
+	width: 190px;
 	text-align: center;
 	font-size: 14px;
 	font-weight: 300;
 	color: #1a76d1;
 	vertical-align: top;
+	font-weight: bold;
 }
 
 .course-info {
