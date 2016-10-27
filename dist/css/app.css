@@ -3938,6 +3938,8 @@ td,th {
 
 .price-discount img {
 	float: left;
+	height: auto;
+	width: 100px;
 }
 
 .course__wrapper {
