@@ -5147,7 +5147,7 @@ div.top__min {
 	text-align: center;
 	padding: 10px;
 	transition: 0.3s;
-	height: 200px;
+	min-height: 200px;
 }
 
 .inside__block-blue .inside__block-blue-title {
