@@ -73,20 +73,21 @@
   <div class="contacts__form">
     <form class="price-study">
       <div class="price-study__item">
-        <input class="price-study__text" type="text" placeholder="Имя">
+        <input id="name" name="name" class="price-study__text" type="text" placeholder="Имя">
+        <div class="error-box"></div>
       </div>
       <div class="price-study__item">
         <div class="input-bloc w1">
           <input id="email" name="email" size="25" type="text" placeholder="E-mail" />
-          <div class="error-box">
-           </div>
+          <div class="error-box"></div>
         </div>
       </div>
       <div class="price-study__item">
         <input class="price-study__text" type="text" placeholder="Телефон">
       </div>
       <div class="price-study__item">
-        <textarea class="price-study__text" type="text" placeholder="Сообщение" rows="3"></textarea>
+        <textarea cols="50" id="message" name="message" class="price-study__text" type="text" placeholder="Сообщение" rows="3"></textarea>
+        <div class="error-box"></div>
       </div>
       <button class="price-study__btn" type="submit">Отправить</button>
     </form>
