@@ -5116,7 +5116,7 @@ div.top__min {
 }
 
 .curs__info_blocks {
-	max-width: 615px;
+	max-width: 622px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 15px 0;
@@ -5186,16 +5186,13 @@ div.top__min {
 .inside__block {
 	width: 300px;
 	float: left;
+	margin: 0 10px 10px 0;
 }
 
 .inside__block-blue .inside__item-id .pay__span {
 	font-weight: bold;
 	font-size: 21px;
 	padding-top: 15px;
-}
-
-.inside__block:last-child {
-	float: right;
 }
 
 .inside__block  img {
