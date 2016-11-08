@@ -5116,8 +5116,7 @@ div.top__min {
 }
 
 .curs__info_blocks {
-	max-width: 622px;
-	margin: 0 auto;
+
 	overflow: hidden;
 	padding: 15px 0;
 }
@@ -5129,6 +5128,17 @@ div.top__min {
 
 .curs__info_blocks .inside__block a:hover .inside__block-blue {
 	background: #2e95fb;
+}
+
+.curs__info_blocks ul {
+	text-align: center;
+	display: block; /* добавляем блочность, если необходимо */
+}
+
+.curs__info_blocks ul li {
+	margin: 0 5px 10px;
+	display: inline-block; /* позволяем vertical-align выравнивать себя по вертикали */
+	vertical-align: middle; /* и выравниваем */
 }
 
 .pr__area_title {
@@ -5186,7 +5196,6 @@ div.top__min {
 .inside__block {
 	width: 300px;
 	float: left;
-	margin: 0 10px 10px 0;
 }
 
 .inside__block-blue .inside__item-id .pay__span {
