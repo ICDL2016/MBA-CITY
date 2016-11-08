@@ -4798,6 +4798,17 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 .bill-form a:hover {
 	color: #278cef;
 }
+.input-bloc input {
+	width: 100%;
+}
+.error-box {
+	text-align: left;
+	font-size: 12px;
+}
+.not_error {
+	border-color: #1a76d1 !important;
+	background: #fff !important;
+}
 @media (max-width: 500px) {
 	.bill-form a {
 		position: static;
