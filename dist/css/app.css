@@ -4801,9 +4801,16 @@ input:not([type="submit"]):-ms-input-placeholder,textarea:-ms-input-placeholder 
 .input-bloc input {
 	width: 100%;
 }
+div.top__min {
+	margin-top: -10px;
+	margin-bottom: 5px;
+}
 .error-box {
 	text-align: left;
 	font-size: 12px;
+}
+.bill-form label div.error-box {
+	border-color: transparent !important;
 }
 .not_error {
 	border-color: #1a76d1 !important;
