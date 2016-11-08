@@ -69,7 +69,7 @@ $(document).ready(function(){
         else
         {
           $(this).removeClass('not_error').addClass('error');
-          $(this).next('.error-box').html('&bull; поле "Имя" обязательно для заполнения<br> &bull; длина имени должна составлять не менее двух символов<br> &bull; поле должно содержать только русские или латинские буквы')
+          $(this).next('.error-box').html('&bull; поле "Имя" обязательно для заполнения')
               .css('color','red')
               .animate({'paddingLeft':'10px'},400)
               .animate({'paddingLeft':'5px'},400);
@@ -112,7 +112,7 @@ $(document).ready(function(){
         else
         {
           $(this).removeClass('not_error').addClass('error');
-          $(this).next('.error-box').html('&bull; поле "Текст письма" обязательно для заполнения')
+          $(this).next('.error-box').html('&bull; поле "Сообщение" обязательно для заполнения')
               .css('color','red')
               .animate({'paddingLeft':'10px'},400)
               .animate({'paddingLeft':'5px'},400);
