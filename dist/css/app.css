@@ -5396,7 +5396,7 @@ div.top__min {
 	color: #fff;
 	text-decoration: none;
 	width: 100%;
-	max-width: 240px;
+	max-width: 280px;
 	margin: 15px auto;
 	text-align: center;
 	font-size: 16px;
@@ -6037,9 +6037,19 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 		position: static;
 		margin: 0 auto;
 	}
-
+	.message-form table,
+	.message-form tr,
+	.message-form td {
+		display: block;
+	}
+	table.support-ticket-edit-form td.field-name {
+		text-align: left;
+	}
 	.course-info {
 		margin-left: 0;
+	}
+	.overrides .message-form [type="text"], .overrides .message-form textarea {
+		width: 100%;
 	}
 
 
