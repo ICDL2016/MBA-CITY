@@ -4593,10 +4593,16 @@ td,th {
 	line-height: 21px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	width: 100%;
+	max-width: 280px;
+}
+.more__file {
+	color: #1a76d1;
+	background: #fff;
 }
 
 [type=submit]:hover,[type=submit].active,.btn:hover,.btn.active {
-	background: #388fe6;
+	background: #228bf4;
 	color: #fff;
 }
 
