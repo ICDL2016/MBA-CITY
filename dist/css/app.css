@@ -6039,8 +6039,12 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	}
 	.message-form table,
 	.message-form tr,
-	.message-form td {
+	.message-form td,
+	.message-form thead,
+	.message-form tbody,
+	.message-form tfoot{
 		display: block;
+		width: 100% !important;
 	}
 	table.support-ticket-edit-form td.field-name {
 		text-align: left;
