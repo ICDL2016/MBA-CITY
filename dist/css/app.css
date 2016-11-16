@@ -5934,6 +5934,11 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	text-align: left;
 	font-weight: bold;
 }
+.price-study .price-study__btn {
+	width: 100%;
+	max-width: 100%;
+	margin-top: 0;
+}
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
@@ -6030,6 +6035,7 @@ table.support-ticket-edit-form td, table.support-ticket-edit-form th {
 	
 	
 }
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
