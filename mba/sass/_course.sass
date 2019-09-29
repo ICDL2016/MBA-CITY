@@ -1,0 +1,149 @@
+.course
+    &-modal
+        display: none
+        padding: 25px 15px
+        background: #fff
+        z-index: 100
+        position: fixed
+        width: 600px
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        color: $blue
+        &__title
+            text-align: center
+            font-size: 18px
+            font-weight: 700
+        &__list
+            font-size: 15px
+            li
+                margin: 5px 0
+    &-header
+        padding-top: 15px
+        text-align: center
+        background: $blue
+        color: #fff
+        font-size: 25px
+        font-weight: 700
+        &__white
+            margin-bottom: 15px
+            color: $blue
+            background: #fff
+        &__full
+            margin-bottom: 30px
+            padding-bottom: 15px
+    &-info
+        &__blocks
+            display: flex
+            justify-content: space-around
+            align-items: center
+            text-align: center
+        &__block
+            margin-bottom: 10px
+            color: $blue
+        &__title
+            font-size: 20px
+        &__img
+            img
+                max-width: 150px
+        &__price
+            font-size: 28px
+            font-weight: 700
+
+        &__btn
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: 20px auto 40px
+            padding: 30px 10px
+            background: $blue
+            color: #fff
+            cursor: pointer
+            border: none
+            width: 400px
+            box-shadow: 0 6px 4px -2px rgba(0, 0, 0, .3)
+            transition: all .3s
+            &:hover
+                background: $light
+            &-top
+                margin-bottom: 15px
+                font-weight: 700
+                font-size: 25px
+                &__prof
+                    margin-bottom: 0
+            &-bottom
+                font-size: 16px
+
+    &-full
+        &__other
+            text-align: center
+            padding: 5px
+            color: $blue
+            font-size: 18px
+            &-title
+                margin-bottom: 20px
+                font-size: 28px
+                font-weight: 700
+
+
+.programms
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin: 0 auto 40px
+    padding: 10px
+    width: 1200px
+    &-block
+        display: flex
+        margin: 5px
+        height: 110px
+        width: 550px
+        cursor: pointer
+        box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.3)
+
+        &__img
+            img
+                width: 175px
+                height: 110px
+        &__descr
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            padding: 10px
+            font-size: 14px
+            background: #fff
+            color: $blue
+            transition: all .2s
+        &__title
+            text-align: center
+            line-height: 1
+            font-size: 18px
+            font-weight: 700
+        &:hover
+            .programms-block__descr
+                background: $blue
+                color: #fff
+
+
+.overlay
+    display: none
+    position: fixed
+    z-index: 99
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: rgba(#000, .5)
+
+.modal
+    &-close
+        color: $blue
+        top: 5px
+        right: 10px
+        font-weight: 700
+        font-size: 20px
+        position: absolute
+        cursor: pointer

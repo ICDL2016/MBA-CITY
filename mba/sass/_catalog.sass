@@ -1,0 +1,82 @@
+.catalog
+    &-header
+        margin-bottom: 20px
+        padding: 10px
+        background: $blue
+        color: #fff
+        text-transform: uppercase
+        font-size: 25px
+        font-weight: 700
+        text-align: center
+
+.directions
+    margin: 10px 0 20px
+    &-blocks
+        width: 1070px
+        margin: auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        position: relative
+    &-title
+        text-transform: none
+        margin-bottom: 10px
+    &-block
+        margin: 2px
+        line-height: 1
+        width: 350px
+        height: 60px
+        text-align: center
+        color: $blue
+        padding: 5px
+        font-size: 18px
+        font-weight: 700
+        box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.3)
+        background: #fff
+        transition: background .3s, color .3s
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        &:hover
+            background: $light
+            color: #fff
+
+.programs
+    width: 100%
+    background: #eee
+    &-wrap
+        width: 100%
+        display: none
+        position: absolute
+    &-block
+        display: table
+        margin: 2.5px
+        width: 100%
+        cursor: pointer
+        &__list
+            width: 100%
+            li
+                a
+                    display: block
+                    padding: 5px 15px
+                    width: 100%
+                    color: $blue
+                    font-size: 20px
+                    transition: all .3s
+                    font-weight: 700
+                &:hover > a
+                    background: $blue
+                    color: #fff
+
+
+.blue
+    background: $blue!important
+    color: #fff
+
+.margin-helper
+    margin-bottom: 2px!important
+
+.red-catalog
+    background: $light!important
+    color: #fff!important

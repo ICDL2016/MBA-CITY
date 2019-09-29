@@ -1,0 +1,73 @@
+.slick-list
+    overflow: visible
+.popular
+    background: #ccc
+    box-shadow: 0 0 10px 5px #ccc
+    &-header
+        margin-bottom: 20px
+        font-size: 25px
+        font-weight: 700
+        color: $blue
+        text-align: center
+    &-slider
+        margin: auto
+        width: 1200px
+    &-slide
+        text-align: center
+    &-block
+        margin: 0 auto 15px
+        width: 280px
+        height: 180px
+        position: relative
+        &__wrap
+            position: absolute
+            width: 100%
+            left: 0
+            top: 0
+            cursor: pointer
+            z-index: 10
+            transition: background .3s
+            &:hover
+                > .popular-title
+                    background: $light
+
+
+    &-img
+        height: 140px
+        background: url(../img/pop1.jpg) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+    &-img2
+        background: url(../img/pop2.jpg) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+
+    &-title
+        padding: 10px 5px
+        text-align: center
+        background: $blue
+        font-weight: 700
+        color: #fff
+
+.owl-nav
+    height: 0
+.arrow
+    top: 45%
+    transform: translateY(-50%)
+    border: 50px solid transparent
+    cursor: pointer
+    transition: opacity 0.3s
+    position: absolute
+    z-index: 100
+    opacity: .75
+    &:focus
+        outline: none
+    &:hover
+        opacity: 1
+    &-left
+        left: -60px
+        border-right: 80px solid #fff
+
+    &-right
+        right: -60px
+        border-left: 80px solid #fff

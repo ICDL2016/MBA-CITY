@@ -1,0 +1,26 @@
+.video
+    &-wrapper
+        margin: auto
+        width: 100%
+        background: url(../img/video-bg.jpg) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        background-position-y: 0
+        height: 500px
+        position: relative
+    &-block
+        content: ''
+        position: absolute
+        top: 50%
+        left: 47%
+        transform: translateY(-50%)
+        border: 50px solid transparent
+        border-left: 80px solid $blue
+        cursor: pointer
+        transition: border .3s
+        &:hover
+            border-left: 80px solid $light
+
+#divPlayer1
+    display: none
+    //margin-bottom: -5px
