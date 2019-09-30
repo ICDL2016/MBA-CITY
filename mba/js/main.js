@@ -1,10 +1,27 @@
 $(document).ready(function(){
     $(".popular-slider").owlCarousel({
-        items: 4,
         nav: true,
         loop: true,
         dots: false,
         navText: ["<div class='arrow arrow-left'></div>", "<div class='arrow arrow-right'></div>"],
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 1,
+            },
+            // breakpoint from 600 up
+            600 : {
+                items: 2,
+            },
+            // breakpoint from 992 up
+            992 : {
+                items: 3,
+            },
+            // breakpoint from 1250 up
+            1250 : {
+                items: 4,
+            }
+        }
     });
 });
 

@@ -9,8 +9,8 @@
             <div class="container">
 
                 <div class="form-top">
-                    <span class="form-bottom__top profession-form__title contacts-form__title">Войти в учебный кабинет</span>
-                    <span class="form-bottom__second contacts-form__bottom">Авторизация</span>
+                    <span class="form-bottom__top profession-form__title contacts-form__title">Восстановление пароля</span>
+                    <span class="form-bottom__second contacts-form__bottom">Если вы забыли пароль, введите ваш E-Mail:</span>
                 </div>
                 <div class="form-body">
                     <input class="form-input form-input__email" type="text" placeholder="Email*" name="email">
@@ -22,7 +22,7 @@
         </div>
 
         <div class="remind-submit">
-            <span class="form-bottom__top profession-form__btn contacts-form__btn">Вход</span>
+            <span class="form-bottom__top profession-form__btn contacts-form__btn">Восстановить</span>
         </div>
     </form>
     <div class="form-descr">

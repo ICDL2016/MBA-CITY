@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="sass/style.css?v=14">
+    <link rel="stylesheet" href="sass/style.css?v=15">
 </head>
 <body>
 
