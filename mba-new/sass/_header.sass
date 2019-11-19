@@ -1,0 +1,272 @@
+.header
+    height: 40px
+    background: url(../img/header-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    width: 100%
+    &-span768
+        display: none
+    &-mobile
+        display: none
+    &-right
+        display: flex
+        align-items: center
+        height: 40px
+        text-align: left
+        font-size: 20px
+    &-left
+        height: 40px
+        display: flex
+        align-items: center
+        padding-left: 55px
+    &-icons
+        width: 200px
+        display: flex
+        justify-content: space-evenly
+        font-size: 22px
+        a
+            color: #fff
+            transition: color, .3s
+            &:hover
+                color: #f2f3f5
+    &-login
+        margin-left: 15px
+        a
+            display: flex
+            color: #fff
+            i
+                font-size: 20px
+            span
+                margin-left: 10px
+                font-size: 14px
+                position: relative
+                &:after
+                    content: ''
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    transition: width, .4s
+                    width: 0
+                    height: 1px
+                    border: .5px solid #ffffff
+                &:hover
+                    &:after
+                        width: 100%
+
+    &-logo
+        &__wrapper
+            padding: 10px 0
+        &-2
+            height: 48px
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                width: 350px
+    &-bottom
+        img
+            max-width: 100%
+    &-phone
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        &__number
+            line-height: 1.2
+            letter-spacing: -.4px
+            margin-left: 10px
+            &-title
+                font-family: 'Roboto Light', sans-serif
+                font-size: 13px
+            &-number
+                font-family: 'Roboto Black', sans-serif
+                font-size: 20px
+                a
+                    color: #000
+                    transition: color, .3s
+                &:hover
+                    a
+                        color: $blue
+
+        &__icon
+            img
+                width: 40px
+
+
+    &-menu
+        width: 100%
+        background: $blue
+        &__search
+            position: relative
+            i
+                cursor: pointer
+                position: absolute
+                right: 15px
+                top: 50%
+                transform: translateY(-50%)
+                color: #fff
+        &__list
+            display: flex
+            align-items: center
+            justify-content: space-between
+            li
+                padding: 12px 15px
+                transition: background-color, .3s
+                cursor: pointer
+                &:hover
+                    background-color: $light
+                a
+                    color: #fff
+                &:last-child
+                    padding: 0
+                    cursor: auto
+                    &:hover
+                        background: $blue
+                    input
+                        color: #fff
+                        padding: 5px 40px 5px 15px
+                        border: 1px solid #fff
+                        background: transparent
+                        border-radius: 30px
+
+@media screen and (max-width: 991px)
+    .position-relative .main-form__wrapper
+        width: 90%
+    .position-relative .main-form__title
+        font-size: 15px
+    .position-relative .main-form__header
+        text-align: center
+    .position-relative .main-form__submit
+        font-size: 16px
+    .position-relative .main-form__bottom
+        font-size: 12px
+    .position-relative .main-form__bottom span
+        font-size: 25px
+    .position-relative .form-checkbox + label
+        font-size: 12px
+    .header
+        &-form
+            margin-left: 10%
+            width: 300px
+        &-right
+            font-size: 16px
+        &-left
+            justify-content: space-between
+        &-login
+            a
+                .header-span992
+                    display: none
+                .header-span768
+                    display: block
+        &-phone
+            &__number
+                &-number
+                    font-size: 16px
+        &-menu
+            &__list
+                font-size: 13px
+
+
+
+@media screen and (max-width: 767px)
+    .position-relative .main-form__wrapper
+        width: 100%
+        bottom: 340px
+        left: 0
+    .header, .header-bottom, .header-menu
+        display: none
+    .header
+        &-form
+            display: none
+        &-phone
+            margin-left: 15px
+            &__number
+                &-title
+                    font-size: 11.5px
+        &-logo
+            width: 120px
+            img
+                width: 100%
+        &-phone
+            &__icon
+                img
+                    width: 30px
+        &-icons
+            margin: 0 25px
+            font-size: 18px
+        &-login
+            margin-left: 0
+        &-mobile
+            display: block
+            &__top
+                display: flex
+                align-items: center
+                justify-content: center
+                background: #fff
+            &__middle
+                display: flex
+                justify-content: center
+                align-items: center
+                background: #f2f3f5
+                position: relative
+                height: 37px
+                &-left
+                    width: 100%
+                    height: 37px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background: $blue
+            &__burger
+                padding: 0 5px 0 20px
+                width: 100px
+                height: 37px
+                color: $blue
+                font-size: 25px
+                background: url(../img/header-mobile-bg.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+            &__bottom
+                text-align: center
+                padding: 10px 5px
+                img
+                    width: 300px
+            &__menu
+                display: none
+                text-align: center
+                width: 100%
+                text-transform: uppercase
+                background: $blue
+                font-size: 20px
+                transition: background .3s
+                li
+                    padding: 5px
+                    &:hover
+                        background: $light
+                    a
+                        color: #fff
+
+        &-fixed
+            //position: fixed
+            //top: 0
+            //left: 0
+            //width: 100%
+            //z-index: 9999
+
+    .burger-active
+        color: #fff
+        background: $blue
+
+@media screen and (max-width: 400px)
+    .position-relative .main-form__wrapper
+        bottom: 230px
+        left: 0
+        width: 100%
+    .header
+        &-mobile
+            &__middle
+                &-left
+                    padding-right: 5px
+                    justify-content: space-evenly
+        &-icons
+            margin: 0
+            width: 150px

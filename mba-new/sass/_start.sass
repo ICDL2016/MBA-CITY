@@ -1,0 +1,62 @@
+.start
+    &-form
+        position: absolute
+        bottom: -35px
+        left: 30px
+    &-img
+        img
+            width: 420px
+    &-top
+        margin-bottom: 15px
+        display: flex
+        align-items: center
+        i
+            color: $blue
+            font-size: 25px
+    &-title
+        line-height: 1
+        margin-left: 15px
+        text-align: center
+        font-size: 35px
+        font-family: "Roboto Black", sans-serif
+        span
+            font-size: 40px
+            display: block
+            color: $blue
+
+@media (max-width: 991px)
+    .start
+        padding-bottom: 175px
+        &-form
+            bottom: auto
+        &-top
+            justify-content: center
+        &-img
+            text-align: center
+            img
+                width: 290px
+
+                
+@media (max-width: 767px)
+    .start
+        padding-bottom: 0
+        &-top
+            margin-bottom: 250px
+        &-form
+            display: none
+        &-img
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            top: -250px
+            z-index: -1
+
+@media (max-width: 575px)
+    .start
+        &-top
+            img
+                width: 60px
+        &-title
+            font-size: 24px
+            span
+                font-size: 30px

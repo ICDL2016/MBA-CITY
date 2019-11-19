@@ -1,0 +1,37 @@
+.stats
+    margin-bottom: 20px
+    padding: 30px
+    background: url(../img/stats/stats-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &-blocks
+        display: flex
+        justify-content: center
+        align-items: center
+    &-block
+        &:first-child
+            margin-right: -20px
+        &:last-child
+            margin-left: -20px
+        img
+            width: 290px
+
+@media (max-width: 991px)
+    .stats
+        &-block
+            img
+                width: 200px
+
+@media (max-width: 575px)
+    .stats
+        padding: 20px 0
+        &-blocks
+            width: 100%
+        &-block
+            &:first-child
+                margin-right: -10px
+            &:last-child
+                margin-left: -10px
+            width: 33%
+            img
+                width: 100%

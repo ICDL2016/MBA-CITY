@@ -1,0 +1,284 @@
+.main
+    position: relative
+    &-slider
+        height: 450px
+        &__block
+            height: 450px
+            &-container
+                height: 100%
+                position: relative
+            &1
+                background: url(../img/slider/1.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+            &2
+                background: url(../img/slider/2.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+            &3
+                background: url(../img/slider/3.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+            &4
+                background: url(../img/slider/1.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+            &-human
+                position: absolute
+                display: flex
+                justify-content: center
+                bottom: 0
+                right: 0
+                z-index: 100
+                text-align: center
+                width: 400px
+
+    &-form
+        margin: auto
+        width: 350px
+        padding: 15px
+        background: $blue
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3)
+        transition: background, .3s
+        input
+            padding: 5px 10px
+            margin-bottom: 10px
+            width: 100%
+        &__wrapper
+            position: absolute
+            bottom: -25px
+            z-index: 1000
+        &__header
+            margin-bottom: 20px
+            color: #ffffff
+            font-family: "Roboto Medium", sans-serif
+            font-size: 38px
+        &__title
+            font-family: 'Roboto Light', sans-serif
+            margin-bottom: 15px
+            color: #ffffff
+            font-size: 18px
+            text-align: center
+        &__submit
+            display: block
+            margin-bottom: 15px
+            width: 100%
+            text-align: center
+            -webkit-border-radius: 30px
+            -moz-border-radius: 30px
+            border-radius: 30px
+            font-size: 20px
+            border: none
+            font-family: "Roboto Medium", sans-serif
+            padding: 10px
+            color: #fff
+            background-color: $red
+        &__bottom
+            font-family: 'Roboto Light', sans-serif
+            text-align: center
+            color: #fff
+            font-size: 14px
+            span
+                text-transform: uppercase
+                font-size: 30px
+
+.human-1
+    width: 400px!important
+    height: 337px!important
+
+.human-2
+    width: 300px!important
+    height: 351px!important
+
+.human-3
+    width: 400px!important
+    height: 369px!important
+
+
+.arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 60px
+    z-index: 10000
+    &-left
+        left: 40px
+    &-right
+        right: 40px
+
+.arrow-blue
+    width: 80px
+    position: absolute
+    top: 48%
+    transform: translateY(-50%)
+    &__left
+        left: -15px
+    &__right
+        right: -15px
+
+.border-red
+    border: 1px solid $red!important
+
+.form
+    &-input
+        &__span
+            display: none
+            margin-top: -5px
+            padding: 0 0 5px 0
+            font-size: 9px
+            font-weight: 300
+            font-family: Arial, sans-serif
+            text-align: left
+            width: 100%
+            color: #fff
+            line-height: 1
+
+.form-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    margin: 10px 0 0 20px
+    width: auto!important
+
+.form-checkbox + label
+    margin: 0 auto 15px
+    padding: 3px 0 3px 20px
+    position: relative
+    cursor: pointer
+    color: #fff
+    font-size: 14px
+    font-family: 'Roboto Light', sans-serif
+    a
+        text-decoration: underline
+        color: #fff
+
+.form-checkbox__block
+    text-align: center
+
+.form-checkbox + label:before
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    left: -6px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    width: 20px
+    height: 20px
+    background-color: #ffffff
+    text-align: center
+    color: $blue
+
+.form-checkbox:checked + label:before
+    content: '\2714'
+
+.mobile
+    &-form
+        display: none
+
+@media (max-width: 991px)
+    .human-1
+        width: 320px!important
+        height: 270px!important
+
+    .human-2
+        width: 300px!important
+        height: 351px!important
+
+    .human-3
+        width: 320px!important
+        height: 295px!important
+
+    .main
+        &-slider
+            &__block
+                &-human
+                    justify-content: flex-end
+                    width: 100%
+
+@media (max-width: 767px)
+    .human-1
+        width: 400px!important
+        height: 337px!important
+
+    .human-2
+        width: 300px!important
+        height: 351px!important
+
+    .human-3
+        width: 400px!important
+        height: 369px!important
+
+    .main
+        &-slider
+            &__block
+                &-human
+                    justify-content: center
+    .mobile
+        &-form
+            margin-top: -1px
+            z-index: 10000
+            display: block
+
+@media (max-width: 660px)
+    .main
+        &-slider
+            height: 400px
+            &__block
+                height: 400px
+        &-form
+            &__wrapper
+                bottom: 340px
+            &__header
+                font-size: 22px
+
+    .arrow
+        &-left
+            left: 20px
+        &-right
+            right: 20px
+
+@media (max-width: 425px)
+    .main
+        &-form
+            width: 100%
+            &__title
+                font-size: 15.5px
+
+@media (max-width: 400px)
+    .human-1
+        width: 250px!important
+        height: 211px!important
+
+    .human-2
+        width: 188px!important
+        height: 219px!important
+
+    .human-3
+        width: 250px!important
+        height: 231px!important
+
+    .main
+        &-form
+            margin-top: -2px!important
+            &__wrapper
+                bottom: 280px
+            &__title
+                font-size: 15px
+        &-slider
+            height: 300px
+            &__block
+                height: 300px
+
+@media (max-width: 350px)
+    .main
+        &-form
+            width: 100%
+            &__bottom
+                font-size: 13px
+                span
+                    font-size: 25px
+    .form-checkbox + label
+        font-size: 13px

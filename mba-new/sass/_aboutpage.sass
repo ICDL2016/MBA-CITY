@@ -1,0 +1,36 @@
+.aboutpage
+    &-breadcrumbs
+        opacity: .95
+    &-wrapper
+        background: url(../img/bg-academy.png) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        -ms-background-position-y: 0
+        background-position-y: 0
+        svg
+            stroke: none
+            width: 80px
+            &:hover
+                fill: $light
+    &-video
+        padding: 40px 250px
+        z-index: 2
+        top: 200px
+        transform: translate(-50%, -80px)
+        border: 7px solid rgba($blue, .5)
+
+@media (max-width: 767px)
+    .aboutpage
+        &-video
+            padding: 30px 200px
+            top: 156px
+            transform: translate(-50%, -80px)
+
+@media (max-width: 575px)
+    .aboutpage
+        &-wrapper
+            height: 300px
+        &-video
+            padding: 20px 100px
+            top: 165px
+            transform: translate(-50%, -80px)

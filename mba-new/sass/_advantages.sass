@@ -1,0 +1,62 @@
+.fil1, .fil2
+    transition: all .3s
+
+.advantages
+    margin-bottom: 30px
+    &-blocks
+        display: flex
+        align-items: center
+        justify-content: center
+    &-block
+        margin: 0 5px
+        text-align: center
+        padding: 20px
+        background: $blue
+        height: 265px
+        width: 180px
+        color: #fff
+        font-family: "Roboto Medium", sans-serif
+        cursor: pointer
+        transition: all .3s
+        &:hover
+            background: #EE220C
+            .fil1
+                fill: #fff
+            .fil2
+                fill: #EE220C
+    &-icon
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 auto 25px
+        height: 100px
+        width: 100px
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        background: $red
+        transition: all .3s
+        img
+            width: 50px
+
+
+@media (max-width: 767px)
+    .advantages
+        &-blocks
+            width: 400px
+            margin: auto
+            flex-wrap: wrap
+        &-block
+            margin-bottom: 10px
+
+@media (max-width: 440px)
+    .advantages
+        &-blocks
+            width: 300px
+            margin: auto
+            flex-wrap: wrap
+        &-block
+            padding: 15px 3px
+            width: 140px
+            height: 230px
+            font-size: 14px

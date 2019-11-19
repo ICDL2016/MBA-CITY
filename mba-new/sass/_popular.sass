@@ -1,0 +1,86 @@
+.popular
+    margin: auto
+    padding: 45px 15px 0 15px
+    background: url(../img/popular-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    &-slider
+        position: relative
+        .owl-nav
+            display: block!important
+    &-wrapper
+        margin: auto
+        width: 1520px
+    &-blocks
+        margin: auto
+        width: 290px
+    &-block
+        margin: 13px auto
+        display: flex
+        align-items: flex-end
+        width: 100%
+        height: 145px
+        cursor: pointer
+        &:hover > .popular-block__descr
+            background: rgba($red, .7)
+            color: #fff
+        &__descr
+            width: 100%
+            height: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            line-height: 1.2
+            font-family: "Roboto Black", sans-serif
+            padding: 5px 10px
+            text-align: center
+            color: #fff
+            background: rgba($blue, .7)
+            transition: all, .3s
+        &1
+            background: url(../img/popular/popular1.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+        &2
+            background: url(../img/popular/popular2.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+        &3
+            background: url(../img/popular/popular3.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+        &4
+            background: url(../img/popular/popular4.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+
+
+@media (max-width: 1599px)
+    .popular
+        &-wrapper
+            width: 1220px
+
+@media (max-width: 1230px)
+    .popular
+        &-wrapper
+            width: 915px
+
+@media (max-width: 991px)
+    .popular
+        background: none
+        &-wrapper
+            width: 605px
+
+@media (max-width: 660px)
+    .popular
+        padding: 15px 15px 0
+        &-wrapper
+            width: 100%
+
+    .arrow
+        &-blue
+            width: 60px
+            &__right
+                right: 0
+            &__left
+                left: 0

@@ -1,0 +1,272 @@
+.forauth
+    &-video
+        margin-bottom: 120px
+        &__wrapper
+            background: url(../img/for-auth-bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            background-position-y: 0
+    &-form
+        &__header
+            max-width: 450px
+            font-family: "Roboto Black", sans-serif
+    &-info
+        margin-bottom: 30px
+        font-family: "Roboto Black", sans-serif
+        &__icon
+            display: flex
+            align-items: center
+            justify-content: center
+            margin: 0 auto
+            width: 150px
+            height: 150px
+            border-radius: 50%
+            background: $blue
+            &-last
+                background: $red
+        &__title
+            width: max-content
+            margin: 0 auto 10px
+            font-size: 25px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                background: #3dbbe9
+                width: 100px
+                height: 1px
+                left: -120px
+                top: 50%
+            &-last
+                &::after
+                    content: ''
+                    position: absolute
+                    background: #3dbbe9
+                    width: 100px
+                    height: 1px
+                    right: -120px
+                    top: 50%
+        &__oldprice
+            margin: 0 auto 5px
+            width: max-content
+            height: 20px
+            font-size: 30px
+            color: $blue
+            position: relative
+            &-last
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 120%
+                    height: 2px
+                    background: $red
+                    left: 50%
+                    top: 20px
+                    transform: translate(-50%, -50%)
+        &__number
+            font-size: 60px
+            color: $blue
+            &-last
+                color: $red
+    &-btn
+        margin-bottom: 30px
+        text-align: center
+        &__comment
+            font-family: 'Roboto Black', sans-serif
+            color: $blue
+            font-size: 25px
+        &__btn
+            display: block
+            margin: 0 auto 10px
+            width: 290px
+            font-family: 'Roboto Medium', sans-serif
+            padding: 15px 10px
+            color: #fff
+            background: $red
+            border-radius: 50px
+            text-align: center
+            transition: background .3s
+            position: relative
+            &:hover
+                color: #fff
+                background: lighten($red, 10)
+            &::before
+                content: ''
+                position: absolute
+                background: #3dbbe9
+                width: 300px
+                height: 1px
+                left: -320px
+                top: 50%
+            &::after
+                content: ''
+                position: absolute
+                background: #3dbbe9
+                width: 300px
+                height: 1px
+                right: -320px
+                top: 50%
+
+    &-program
+        &__title
+            margin: 0 auto 30px
+            max-width: 510px
+            text-align: center
+            font-size: 28px
+            font-family: "Roboto Black", sans-serif
+            position: relative
+            span
+                color: $blue
+            &::after
+                content: ''
+                position: absolute
+                width: 80px
+                height: 4px
+                background-color: #00a6e2
+                bottom: -10px
+                left: 50%
+                transform: translateX(-50%)
+
+.programms
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin: 0 auto 40px
+    &-block
+        display: flex
+        margin: 5px
+        height: 100px
+        cursor: pointer
+        border: 1px solid $blue
+        &__img
+            width: 150px
+            height: 100px
+            background: url(../img/course.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            &2
+                background: url(../img/course2.png) center no-repeat
+                -webkit-background-size: cover
+                background-size: cover
+        &__part
+            font-size: 18px
+            font-family: 'Roboto Medium', sans-serif
+            position: relative
+            svg
+                position: absolute
+                width: 10px
+                fill: $blue
+                left: -16px
+                top: 50%
+                transform: translateY(-50%)
+        &__descr
+            width: 300px
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            flex-direction: column
+            padding: 10px 10px 10px 15px
+            font-size: 14px
+            background: #fff
+            color: $blue
+            transition: all .2s
+        &__title
+            line-height: 1
+            font-size: 15px
+            color: #000
+            font-family: 'Roboto Black', sans-serif
+        &:hover
+            .programms-block__descr
+                background: $blue
+                color: #fff
+            .programms-block__title, .programms-block__more
+                color: #fff
+            .programms-block__part svg
+                fill: #fff
+        &__more
+            text-decoration: underline
+
+@media (max-width: 991px)
+    .forauth
+        &-video
+            margin-bottom: 100px
+        &-info
+            &__title
+                &::before, &::after
+                    display: none
+            &__number
+                font-size: 45px
+
+@media (max-width: 767px)
+    .breadcrumbs
+        &-wrapper
+            justify-content: center
+            flex-wrap: wrap
+
+    .forauth
+        &-program
+            &__title
+                margin: 0 auto 30px
+                max-width: 400px
+                font-size: 24px
+        &-video
+            margin-bottom: 0
+        &-info
+            margin-top: 30px
+            &__title
+                line-height: 1.2
+                width: 90px
+                font-size: 18px
+            &__icon
+                width: 120px
+                height: 120px
+                img
+                    max-width: 60px
+            &__oldprice
+                font-size: 22px
+                &::after
+                    top: 15px
+            &__number
+                font-size: 35px
+        &-btn
+            &__btn
+                &::before, &::after
+                    display: none
+            &__comment
+                display: none
+
+@media (max-width: 575px)
+    .forauth
+        &-program
+            &__title
+                font-size: 18px
+        &-info
+            &__number
+                font-size: 18px
+            &__title
+                font-size: 16px
+            &__oldprice
+                margin-bottom: 0
+                font-size: 14px
+                &::after
+                    top: 10px
+            &__icon
+                width: 80px
+                height: 80px
+                img
+                    max-width: 40px
+
+@media (max-width: 460px)
+    .programms
+        &-block
+            height: 80px
+            width: 100%
+            &__img
+                height: 80px
+            &__part
+                font-size: 13px
+            &__title
+                font-size: 13px
+            &__descr
+                padding: 0 5px 0 15px
+                font-size: 13px

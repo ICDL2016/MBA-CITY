@@ -1,0 +1,67 @@
+.choose
+    margin-bottom: 26%
+    position: relative
+    &-bottom
+        position: absolute
+        width: 100%
+        left: 0
+        bottom: -390px
+        height: 700px
+        z-index: -1
+        background: url(../img/choose-bg.png) center no-repeat
+        -webkit-background-size: contain
+        background-size: contain
+    &-blocks
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        align-items: center
+    &-block
+        margin: 7px auto
+        width: 290px
+        &__descr
+            background: rgba(#fff, .7)
+            color: $blue
+
+@media (min-width: 1700px)
+    .choose
+        &-bottom
+            -webkit-background-size: cover
+            background-size: cover
+
+@media (max-width: 1599px)
+    .choose
+        &-blocks
+            &::after
+                content: ''
+                width: 290px
+                margin: 7px auto
+
+@media (max-width: 1199px)
+    .choose
+        margin-bottom: 27.5%
+        &-bottom
+            bottom: -380px
+
+@media (max-width: 991px)
+    .popular
+        &-block
+            margin: 12px auto
+    .choose
+        margin-bottom: 29%
+        &-block
+            margin: 6px auto
+        &-bottom
+            bottom: -370px
+
+@media (max-width: 767px)
+    .choose
+        margin-bottom: 20px
+        &-bottom
+            display: none
+
+@media (max-width: 660px)
+    .choose
+        &-blocks
+            margin: auto
+            max-width: 400px

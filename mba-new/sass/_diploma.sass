@@ -1,0 +1,120 @@
+.diploma
+    &-video
+        margin-bottom: 150px
+        &__wrapper
+            background: url(../img/diploma-bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+        &__block
+            content: ''
+            position: absolute
+            top: 50%
+            left: 60%
+            transform: translate(-50%, -50%)
+            cursor: pointer
+            svg
+                width: 120px
+                stroke-width: 2px
+                stroke: white
+                fill: $blue
+                transition: all .3s
+                &:hover
+                    fill: $light
+    &-form
+        &__wrapper
+            top: 10px
+            bottom: auto
+        &__header
+            max-width: 500px
+            margin-bottom: 5px
+            font-size: 32px
+            text-align: center
+        &__title
+            font-family: "Roboto Medium", sans-serif
+            margin-bottom: 5px
+            &2
+                margin: 0 auto 10px
+                max-width: 300px
+                font-size: 17px
+    &-about
+        margin-bottom: 30px
+    &-choose
+        &__btn
+            display: block
+            margin: 0 auto 30px
+            padding: 15px 10px
+            max-width: 400px
+            background: $blue
+            font-family: "Roboto Black", sans-serif
+            font-size: 20px
+            transition: background .3s
+            position: relative
+            border-radius: 50px
+            text-align: center
+            line-height: 1.2
+            cursor: pointer
+            color: #fff
+            &:hover
+                color: #fff
+                background: $light
+            &::before
+                content: ''
+                position: absolute
+                width: 200px
+                height: 1px
+                background: #3dbbe9
+                left: -260px
+                top: 50%
+
+
+@media (max-width: 991px)
+    .diploma
+        &-video
+            &__block
+                left: 70%
+        &-form
+            &__wrapper
+                max-width: 400px
+        &-choose
+            &__btn
+                &::before
+                    display: none
+
+@media (max-width: 767px)
+    .diploma
+        &-video
+            margin-bottom: 0
+            &__block
+                left: 50%
+        &-form
+            &__wrapper
+                top: 300px
+                max-width: none
+            &__header
+                margin: auto
+        &-video
+            &__block
+                top: 30%
+        &-form
+            &__wrapper
+                top: 200px
+
+@media (max-width: 450px)
+    .diploma
+        &-about
+            margin-bottom: 15px
+        &-video
+            &__block
+                svg
+                    width: 80px
+        &-form
+            &__wrapper
+                top: 130px
+            &__header
+                max-width: 320px
+                font-size: 24px
+        &-choose
+            &__btn
+                padding: 15px 10px
+                width: 310px
+                font-size: 16px

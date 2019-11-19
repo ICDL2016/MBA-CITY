@@ -1,0 +1,43 @@
+.effective
+    &-slider
+        height: 450px
+    &-header
+        font-size: 31px
+    &-books
+        width: 350px
+        position: absolute
+        bottom: -30px
+        right: 50px
+
+@media (max-width: 991px)
+    .effective
+        &-books
+            width: 300px
+            bottom: 0
+            right: 0
+
+@media (max-width: 767px)
+    .effective
+        &-wrapper
+            bottom: 300px!important
+        &-slider
+            height: 400px
+            &__block
+                height: 400px
+        &-header
+            font-size: 25px
+        &-books
+            width: 250px
+            position: relative
+            bottom: 10px
+
+@media (max-width: 400px)
+    .effective
+        &-wrapper
+            bottom: 200px!important
+        &-slider
+            height: 300px
+            &__block
+                height: 300px
+        &-books
+            width: 150px

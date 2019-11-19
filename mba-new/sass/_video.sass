@@ -1,0 +1,44 @@
+.video
+    &-form
+        display: none
+        margin-bottom: 20px
+    &-wrapper
+        margin: auto
+        width: 100%
+        background: url(../img/video-bg.png) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        background-position-y: 0
+        height: 400px
+        position: relative
+    &-block
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        cursor: pointer
+        svg
+            width: 120px
+            stroke-width: 2px
+            stroke: white
+            fill: $blue
+            transition: all .3s
+            &:hover
+                fill: $light
+
+#divPlayer1
+    display: none
+
+@media (max-width: 767px)
+    .video
+        &-wrapper
+            height: 300px
+        &-block
+            svg
+                width: 90px
+
+@media (max-width: 450px)
+    .video
+        &-wrapper
+            height: 200px
