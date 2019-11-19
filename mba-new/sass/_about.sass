@@ -1,0 +1,45 @@
+.about
+    margin-bottom: 30px
+    &-title
+        margin: 0 auto 40px
+        max-width: 700px
+    &-line
+        width: 100%
+        height: 1px
+        background: #3dbbe9
+    &-block
+        padding: 18px
+        display: flex
+        justify-content: center
+        align-items: center
+    &-descr
+        margin-left: 30px
+        font-weight: 400
+        font-size: 18px
+        color: rgba(#000, .8)
+        line-height: 1.3
+    &-img
+        img
+            width: 240px
+
+@media (max-width: 991px)
+    .about
+        &-descr
+            font-size: 16px
+
+@media (max-width: 767px)
+    .about
+        &-line
+            &__first
+                display: none
+        &-block
+            flex-direction: column
+        &-descr
+            margin-left: 0
+            font-size: 14px
+            text-align: justify
+        &-title
+            font-size: 20px
+            margin-bottom: 20px
+        &-img
+            margin-bottom: 15px
