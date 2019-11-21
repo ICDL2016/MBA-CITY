@@ -1381,14 +1381,13 @@ button:focus {
     padding: 13px 10px;
     color: #fff;
     background: #ff0000;
-    border: 2px solid #ff0000;
     border-radius: 50px;
     text-align: center;
-    transition: border 0.3s;
+    transition: background 0.3s;
     position: relative; }
     .forauth-btn__btn:hover {
       color: #fff;
-      border: 2px solid #297acb; }
+      background: #3390ee; }
     .forauth-btn__btn::before {
       content: "";
       position: absolute;
@@ -1797,15 +1796,14 @@ button:focus {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    border: 2px solid #ff0000;
     background: #ff0000;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    transition: border 0.3s; }
+    transition: background 0.3s; }
     .p404-btn:hover {
       color: #fff;
-      border: 2px solid #297acb; }
+      background: #3390ee; }
 
 .login {
   padding: 30px 0 15px; }
@@ -1966,7 +1964,7 @@ button:focus {
   background: #297acb;
   border-radius: 50px;
   text-align: center;
-  transition: border 0.3s;
+  transition: background 0.3s;
   position: relative; }
   .profession-all:hover {
     color: #fff;
@@ -2109,6 +2107,43 @@ button:focus {
 @media (max-width: 420px) {
   .minprice-discount__text {
     font-size: 23px; } }
+.getprice-wrapper {
+  bottom: -45px; }
+.getprice-header {
+  width: 500px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center; }
+.getprice-main {
+  margin-bottom: 100px; }
+.getprice-about {
+  margin-top: 50px; }
+
+@media (max-width: 991px) {
+  .getprice-wrapper {
+    bottom: -25px; } }
+@media (max-width: 767px) {
+  .getprice-header {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+  .getprice-main {
+    margin-bottom: 0; }
+  .getprice-man {
+    top: 0; }
+    .getprice-man__wrapper {
+      bottom: 0; } }
+@media (max-width: 460px) {
+  .getprice-header {
+    width: 300px;
+    font-size: 22px; }
+    .getprice-header span {
+      font-size: 20px; } }
+@media (max-width: 400px) {
+  .getprice-wrapper {
+    bottom: 220px !important; }
+  .getprice-man {
+    width: 175px; } }
 .course-modal {
   display: none;
   padding: 20px;

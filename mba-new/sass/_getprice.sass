@@ -1,0 +1,45 @@
+.getprice
+    &-wrapper
+        bottom: -45px
+    &-header
+        width: 500px
+        margin-bottom: 10px
+        text-transform: uppercase
+        text-align: center
+    &-main
+        margin-bottom: 100px
+    &-about
+        margin-top: 50px
+
+@media (max-width: 991px)
+    .getprice
+        &-wrapper
+            bottom: -25px
+
+@media (max-width: 767px)
+    .getprice
+        &-header
+            width: 400px
+            margin-left: auto
+            margin-right: auto
+        &-main
+            margin-bottom: 0
+        &-man
+            top: 0
+            &__wrapper
+                bottom: 0
+
+@media (max-width: 460px)
+    .getprice
+        &-header
+            width: 300px
+            font-size: 22px
+            span
+                font-size: 20px
+
+@media (max-width: 400px)
+    .getprice
+        &-wrapper
+            bottom: 220px!important
+        &-man
+            width: 175px

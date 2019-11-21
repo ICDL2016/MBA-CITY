@@ -9,41 +9,41 @@
         </div>
         <i class="fa fa-arrow-right"></i>
         <div class="breadcrumbs-current">
-          <a href="minprice.php">
-            Стоимость
+          <a href="getprice.php">
+            Узнать стоимость
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="start profession-start__wrapper minprice-start">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 profession-start">
-          <div class="start-top profession-start__top">
-            <h2 class="start-title profession-start__title minprice-start__title">Минимальная стоимость обучения <span>Зарегистрируйтесь, чтобы начать обучение бесплатно и узнать стоимость со скидкой</span></h2>
-          </div>
-          <form class="main-form start-form profession-form">
-            <?php require '_form2.php'; ?>
-          </form>
-          <div class="start-img minprice-start__img">
-            <img src="img/start.png" alt="start">
+  <div class="main getprice-main">
+    <div class="effective-slider">
+      <div class="main-slider__block main-slider__block1 effective-slider__block">
+        <div class="container main-slider__block-container">
+          <div class="main-slider__block-human main-slider__block1-human getprice-man__wrapper">
+            <img src="img/slider/h4.png" alt="girl" class="effective-books profession-man getprice-man">
           </div>
         </div>
       </div>
     </div>
+    <div class="container position-relative">
+      <div class="main-form__wrapper effective-wrapper getprice-wrapper">
+        <h2 class="main-form__header effective-header getprice-header">Узнайте стоимость обучения в МБА СИТИ</span></h2>
+        <form class="main-form header-form">
+          <?php require '_form.php'; ?>
+        </form>
+      </div>
+    </div>
   </div>
-
-  <img src="img/start.png" alt="start" class="profession-girl minprice-girl">
 
   <form class="main-form mobile-form mb-1">
     <?php require '_form.php'; ?>
   </form>
 
-  <?php require_once '_discount.php';?>
+<?php require_once '_discount.php';?>
 
-  <div class="about">
+  <div class="about getprice-about">
     <h2 class="title about-title">
       Пройдите обучение в Бизнес Академии МБА СИТИ
       и станьте высокооплачиваемым специалистом
@@ -51,6 +51,8 @@
     </h2>
     <?php require_once '_about.php'; ?>
   </div>
+
+<?php require_once '_advantages.php'; ?>
 
 <?php require_once '_footer.php'; ?>
 <?php require_once '_scripts.php'; ?>
