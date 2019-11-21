@@ -29,7 +29,7 @@
 </div>
 
 <div class="choose courses-choose">
-  <?php require_once '_choose.php'; ?>
+  <?php require_once '_courses-choose.php'; ?>
 </div>
 
 <?php require_once '_video.php'; ?>
