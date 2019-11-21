@@ -1378,16 +1378,17 @@ button:focus {
     margin: 0 auto 10px;
     width: 290px;
     font-family: "Roboto Medium", sans-serif;
-    padding: 15px 10px;
+    padding: 13px 10px;
     color: #fff;
     background: #ff0000;
+    border: 2px solid #ff0000;
     border-radius: 50px;
     text-align: center;
-    transition: background 0.3s;
+    transition: border 0.3s;
     position: relative; }
     .forauth-btn__btn:hover {
       color: #fff;
-      background: #ff3333; }
+      border: 2px solid #297acb; }
     .forauth-btn__btn::before {
       content: "";
       position: absolute;
@@ -1561,8 +1562,7 @@ button:focus {
 .directions {
   margin: 10px 0 20px; }
   .directions-blocks {
-    width: 1100px;
-    margin: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1574,7 +1574,7 @@ button:focus {
     margin: 6px;
     border: 1px solid #297acb;
     line-height: 1;
-    width: 350px;
+    width: 290px;
     height: 60px;
     text-align: center;
     color: #297acb;
@@ -1604,8 +1604,6 @@ button:focus {
   border-top: 10px solid #297acb; }
 
 .programs {
-  margin: auto;
-  width: 1075px;
   background: #eee; }
   .programs-wrap {
     width: 100%;
@@ -1644,22 +1642,26 @@ button:focus {
   background: #3390ee !important;
   color: #fff !important; }
 
-@media only screen and (max-width: 1250px) {
-  .programs {
-    width: 895px; }
-
-  .directions-blocks {
-    width: 910px; }
-  .directions-block {
-    width: 290px; } }
-@media only screen and (max-width: 991px) {
-  .programs {
-    width: 595px; }
-
-  .directions-blocks {
-    width: 100%; }
-  .directions-block {
-    width: 290px; } }
+@media (min-width: 1510px) {
+  .directions-blocks::after {
+    content: "";
+    width: 290px;
+    margin: 6px; } }
+@media (min-width: 1812px) {
+  .directions-blocks::after {
+    content: "";
+    width: 894px;
+    margin: 6px; } }
+@media (max-width: 1509px) {
+  .directions-blocks::after {
+    content: "";
+    width: 894px;
+    margin: 6px; } }
+@media only screen and (max-width: 905px) {
+  .directions-blocks::after {
+    content: "";
+    width: 290px;
+    margin: 6px; } }
 @media only screen and (max-width: 767px) {
   .catalog-title__text {
     margin: 0 0 0 10px; }
@@ -1676,9 +1678,6 @@ button:focus {
       bottom: 0;
       width: 100%;
       height: 2px; } }
-@media only screen and (max-width: 603px) {
-  .programs {
-    width: 290px; } }
 @media only screen and (max-width: 575px) {
   .catalog-title__top {
     font-size: 24px; } }
@@ -1792,21 +1791,21 @@ button:focus {
       font-size: 22px; }
   .p404-btn {
     margin: auto;
-    padding: 10px;
+    padding: 8px 10px;
     display: block;
     width: 200px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    border: 2px solid #ff0000;
     background: #ff0000;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    transition: background 0.3s;
-    border: none; }
+    transition: border 0.3s; }
     .p404-btn:hover {
       color: #fff;
-      background: #ff3333; }
+      border: 2px solid #297acb; }
 
 .login {
   padding: 30px 0 15px; }
@@ -1894,6 +1893,222 @@ button:focus {
   .remind-hint {
     margin: 0 auto 10px;
     width: 200px; } }
+.profession-man {
+  bottom: 0; }
+.profession-main {
+  margin-bottom: 70px; }
+.profession-header {
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.2;
+  font-family: Roboto, sans-serif; }
+  .profession-header span {
+    display: block;
+    font-family: "Roboto Black", sans-serif; }
+.profession-wrapper {
+  bottom: -45px; }
+.profession-title {
+  max-width: 800px;
+  text-transform: uppercase; }
+.profession-text__title {
+  margin-bottom: 30px;
+  max-width: 700px;
+  font-family: "Roboto Black", sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+  position: relative; }
+  .profession-text__title:after {
+    content: "";
+    background: #297acb;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 75px;
+    height: 3px; }
+.profession-text__descr {
+  margin-bottom: 20px; }
+.profession-start {
+  position: relative; }
+  .profession-start__wrapper {
+    height: 500px;
+    position: relative; }
+  .profession-start__bg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ccc;
+    z-index: -1;
+    height: 300px;
+    width: 100%; }
+  .profession-start__title {
+    font-size: 32px;
+    text-align: left;
+    color: #297acb; }
+    .profession-start__title span {
+      font-size: 30px;
+      color: #000; }
+  .profession-start__img {
+    position: absolute;
+    right: 200px;
+    top: 0; }
+    .profession-start__img img {
+      width: 350px; }
+.profession-form {
+  bottom: auto; }
+.profession-all {
+  display: block;
+  margin: 10px auto 30px;
+  width: 290px;
+  font-family: "Roboto Medium", sans-serif;
+  padding: 13px 10px;
+  color: #fff;
+  background: #297acb;
+  border-radius: 50px;
+  text-align: center;
+  transition: border 0.3s;
+  position: relative; }
+  .profession-all:hover {
+    color: #fff;
+    background: #3390ee; }
+  .profession-all::before {
+    content: "";
+    position: absolute;
+    background: #3dbbe9;
+    width: 300px;
+    height: 1px;
+    left: -320px;
+    top: 50%; }
+  .profession-all::after {
+    content: "";
+    position: absolute;
+    background: #3dbbe9;
+    width: 300px;
+    height: 1px;
+    right: -320px;
+    top: 50%; }
+.profession-girl {
+  display: none; }
+
+@media (min-width: 992px) {
+  .profession-title span {
+    display: block;
+    text-align: center; } }
+@media (max-width: 991px) {
+  .profession-start__top {
+    justify-content: flex-start; }
+  .profession-header {
+    margin-bottom: 15px; }
+  .profession-all::before, .profession-all::after {
+    display: none; }
+  .profession-wrapper {
+    bottom: -25px; }
+  .profession-start__img {
+    right: 0;
+    top: 75px; }
+    .profession-start__img img {
+      width: 300px; } }
+@media (max-width: 767px) {
+  .profession-main {
+    margin-bottom: 0; }
+  .profession-text {
+    margin-top: 20px; }
+    .profession-text__title {
+      font-size: 22px; }
+      .profession-text__title::after {
+        bottom: -15px; }
+    .profession-text__descr {
+      font-size: 14px; }
+  .profession-wrapper {
+    bottom: 10px !important; }
+  .profession-man {
+    bottom: auto;
+    top: 40px; }
+    .profession-man__wrapper {
+      bottom: auto; }
+  .profession-girl {
+    display: block;
+    margin: 0 auto 20px; }
+  .profession-all {
+    margin-top: 30px; }
+  .profession-start__top {
+    justify-content: center; }
+  .profession-start__title {
+    font-size: 24px;
+    text-align: center; }
+    .profession-start__title span {
+      font-size: 24px; }
+  .profession-start .start-top {
+    margin-bottom: 0; }
+  .profession-start__wrapper {
+    height: max-content; }
+  .profession-start__bg, .profession-start__img {
+    display: none; } }
+@media (max-width: 575px) {
+  .profession-header {
+    font-size: 23px;
+    margin-bottom: 0; } }
+.minprice-start {
+  margin: 20px auto 50px; }
+  .minprice-start__title {
+    max-width: 600px; }
+    .minprice-start__title span {
+      max-width: 500px;
+      font-size: 27px;
+      font-family: Roboto, sans-serif; }
+  .minprice-start__img {
+    position: absolute;
+    right: 100px;
+    top: 50px; }
+.minprice-discount {
+  margin-bottom: 30px; }
+  .minprice-discount__img img {
+    width: 100%; }
+  .minprice-discount__text {
+    color: #297acb;
+    line-height: 1.2;
+    font-size: 70px;
+    font-family: "Roboto Black", sans-serif;
+    letter-spacing: 6px;
+    text-transform: uppercase; }
+
+@media (max-width: 991px) {
+  .minprice-start__img {
+    right: 0;
+    top: auto; }
+  .minprice-discount__text {
+    font-size: 60px; } }
+@media (max-width: 767px) {
+  .minprice-start {
+    margin-bottom: 10px; }
+  .minprice-discount {
+    margin-top: 30px; }
+    .minprice-discount__text {
+      font-size: 45px; }
+  .minprice-girl {
+    max-width: 300px; }
+  .minprice-start__title {
+    margin-left: 0; }
+  .minprice-start__img {
+    display: none; }
+  .minprice-start__title span {
+    font-size: 24px; } }
+@media (max-width: 575px) {
+  .minprice-discount {
+    margin-top: 30px; }
+  .minprice-start__title {
+    font-size: 20px; }
+    .minprice-start__title span {
+      font-size: 20px; } }
+@media (max-width: 500px) {
+  .minprice-discount__text {
+    font-size: 35px; } }
+@media (max-width: 420px) {
+  .minprice-discount__text {
+    font-size: 30px; } }
+@media (max-width: 420px) {
+  .minprice-discount__text {
+    font-size: 23px; } }
 .course-modal {
   display: none;
   padding: 20px;

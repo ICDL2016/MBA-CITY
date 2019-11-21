@@ -1,0 +1,169 @@
+.profession
+    &-man
+        bottom: 0
+    &-main
+        margin-bottom: 70px
+    &-header
+        margin-bottom: 10px
+        text-align: center
+        line-height: 1.2
+        font-family: Roboto, sans-serif
+        span
+            display: block
+            font-family: "Roboto Black", sans-serif
+    &-wrapper
+        bottom: -45px
+    &-title
+        max-width: 800px
+        text-transform: uppercase
+    &-text
+        &__title
+            margin-bottom: 30px
+            max-width: 700px
+            font-family: "Roboto Black", sans-serif
+            font-size: 28px
+            line-height: 1.2
+            position: relative
+            &:after
+                content: ''
+                background: $blue
+                position: absolute
+                left: 0
+                bottom: -5px
+                width: 75px
+                height: 3px
+        &__descr
+            margin-bottom: 20px
+    &-start
+        position: relative
+        &__wrapper
+            height: 500px
+            position: relative
+        &__bg
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            background: #ccc
+            z-index: -1
+            height: 300px
+            width: 100%
+        &__title
+            font-size: 32px
+            text-align: left
+            color: $blue
+            span
+                font-size: 30px
+                color: #000
+        &__img
+            position: absolute
+            right: 200px
+            top: 0
+            img
+                width: 350px
+    &-form
+        bottom: auto
+    &-all
+        display: block
+        margin: 10px auto 30px
+        width: 290px
+        font-family: 'Roboto Medium', sans-serif
+        padding: 13px 10px
+        color: #fff
+        background: $blue
+        border-radius: 50px
+        text-align: center
+        transition: border .3s
+        position: relative
+        &:hover
+            color: #fff
+            background: $light
+        &::before
+            content: ''
+            position: absolute
+            background: #3dbbe9
+            width: 300px
+            height: 1px
+            left: -320px
+            top: 50%
+        &::after
+            content: ''
+            position: absolute
+            background: #3dbbe9
+            width: 300px
+            height: 1px
+            right: -320px
+            top: 50%
+    &-girl
+        display: none
+
+@media (min-width: 992px)
+    .profession
+        &-title
+            span
+                display: block
+                text-align: center
+
+@media (max-width: 991px)
+    .profession
+        &-start
+            &__top
+                justify-content: flex-start
+        &-header
+            margin-bottom: 15px
+        &-all
+            &::before, &::after
+                display: none
+        &-wrapper
+            bottom: -25px
+        &-start
+            &__img
+                right: 0
+                top: 75px
+                img
+                    width: 300px
+
+@media (max-width: 767px)
+    .profession
+        &-main
+            margin-bottom: 0
+        &-text
+            margin-top: 20px
+            &__title
+                font-size: 22px
+                &::after
+                    bottom: -15px
+            &__descr
+                font-size: 14px
+        &-wrapper
+            bottom: 10px!important
+        &-man
+            bottom: auto
+            top: 40px
+            &__wrapper
+                bottom: auto
+        &-girl
+            display: block
+            margin: 0 auto 20px
+        &-all
+            margin-top: 30px
+        &-start
+            &__top
+                justify-content: center
+            &__title
+                font-size: 24px
+                text-align: center
+                span
+                    font-size: 24px
+            .start-top
+                margin-bottom: 0
+            &__wrapper
+                height: max-content
+            &__bg, &__img
+                display: none
+
+@media (max-width: 575px)
+    .profession
+        &-header
+            font-size: 23px
+            margin-bottom: 0
