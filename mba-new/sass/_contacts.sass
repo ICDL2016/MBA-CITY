@@ -1,0 +1,156 @@
+.contacts
+    &-form
+        &__wrapper
+            margin-bottom: 20px
+    &-title
+        margin-bottom: 0
+        &__wrapper
+            align-items: center
+    &-top
+        span
+            color: $light
+    &-img
+        position: absolute
+        top: -20px
+        right: 85px
+        img
+            width: 420px
+
+    &-call, &-consult
+        margin: 30px auto 10px
+        font-size: 18px
+        text-align: center
+
+    &-block
+        padding: 20px 0 0 0
+        text-align: center
+    &-phone
+        margin-bottom: 20px
+        color: $blue
+        font-size: 24px
+        font-weight: 700
+        &__title
+            color: $blue
+            font-size: 12px
+
+    &-managers
+        text-align: center
+        margin: 0 auto 20px
+        &__title
+            line-height: 1.2
+            font-family: "Roboto Black", sans-serif
+            margin-bottom: 30px
+            font-size: 20px
+            color: $blue
+
+    &-phone
+        justify-content: center
+        &__icon
+            img
+                width: 80px
+        &__number
+            color: #444
+            text-align: left
+            &-title
+                font-size: 20px
+            &-number
+                font-size: 40px
+
+    &-manager
+        display: inline-block
+        width: 200px
+        &__img
+            img
+                width: 100%
+        &__name
+            padding: 5px 0
+            background: $blue
+            color: #ffffff
+
+    &-address
+        line-height: 1.2
+        max-width: 600px
+        margin: 0 auto 10px
+        color: $blue
+        &__title
+            color: #444
+
+    &-mobile
+        &__img
+            display: none
+
+    &-gallery
+        text-align: center
+        margin: 20px auto
+        img
+            margin-bottom: 4px
+            width: 300px
+            height: 200px
+            display: inline-block
+
+@media only screen and (max-width: 991px)
+    .contacts
+        &-img
+            top: 20px
+            right: 0
+            img
+                width: 350px
+        &-form
+            &__wrapper
+                padding-bottom: 0
+
+@media only screen and (max-width: 767px)
+    .contacts
+        &-phone
+            margin-left: 0
+            &__icon
+                img
+                    width: 60px
+            &__number
+                &-title
+                    font-size: 16px
+                &-number
+                    font-size: 25px
+        &-mobile
+            &__img
+                height: 300px
+                display: block
+                position: relative
+                img
+                    position: absolute
+                    width: 350px
+                    bottom: -70px
+                    left: 50%
+                    transform: translateX(-50%)
+        &-top
+            &__text
+                max-width: 400px
+        &-title
+            &__wrapper
+                img
+                    display: inline-block
+
+        &-img
+            display: none
+        &-call
+            margin: 10px auto
+        &-manager
+            width: 32%
+            margin: 10px auto
+        &-managers
+            &__title
+                width: 230px
+                margin: -0px auto 15px
+
+@media only screen and (max-width: 575px)
+    .contacts
+        &-top
+            text-align: left
+            &__text
+                max-width: 300px
+                margin-left: 15px
+
+@media only screen and (max-width: 500px)
+    .contacts
+        &-maintitle
+            margin-bottom: 0

@@ -1,0 +1,58 @@
+.pagecourse
+    &-start
+        &__title
+            margin-left: 17px
+            text-align: left
+            font-size: 27px
+            max-width: 400px
+        &__bg
+            background: url(../img/page-course/page-course-bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+        &__img
+            position: absolute
+            right: 45px
+            top: 55px
+            img
+                width: 550px
+        &__mobile
+            display: none
+
+@media (max-width: 991px)
+    .pagecourse
+        &-start
+            &__img
+                right: 0
+                top: 110px
+                img
+                    width: 360px
+
+@media (max-width: 767px)
+    .pagecourse
+        &-start
+            &__title
+                display: none
+            &__img
+                display: none
+        &-mobile
+            padding: 15px 10px
+            display: block
+            background: url(../img/page-course/page-course-bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
+            &__title
+                text-align: center
+                font-family: "Roboto Black", sans-serif
+                margin: auto
+                max-width: 400px
+                font-size: 23px
+            img
+                display: block
+                margin: 30px auto
+                max-width: 400px
+
+@media (max-width: 420px)
+    .pagecourse
+        &-mobile
+            img
+                width: 290px

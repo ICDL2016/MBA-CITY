@@ -73,6 +73,18 @@ input:focus, textarea:focus {
   font-size: 14px;
   font-weight: 400; }
 
+.main-form textarea::-webkit-input-placeholder {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif; }
+
+.main-form textarea:-moz-placeholder {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif; }
+
 .header-menu__search textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px; }
@@ -244,7 +256,7 @@ button:focus {
     background: #297acb;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
     transition: background, 0.3s; }
-    .main-form input {
+    .main-form input, .main-form textarea {
       padding: 5px 10px;
       margin-bottom: 10px;
       width: 100%; }
@@ -263,6 +275,8 @@ button:focus {
       color: #ffffff;
       font-size: 18px;
       text-align: center; }
+      .main-form__title span {
+        font-family: "Roboto Medium", sans-serif; }
     .main-form__submit {
       display: block;
       margin-bottom: 15px;
@@ -465,7 +479,7 @@ button:focus {
         font-size: 25px; }
 
   .form-checkbox + label {
-    font-size: 13px; } }
+    font-size: 11px; } }
 .header {
   height: 40px;
   background: url(../img/header-bg.png) center no-repeat;
@@ -2144,6 +2158,180 @@ button:focus {
     bottom: 220px !important; }
   .getprice-man {
     width: 175px; } }
+.pagecourse-start__title {
+  margin-left: 17px;
+  text-align: left;
+  font-size: 27px;
+  max-width: 400px; }
+.pagecourse-start__bg {
+  background: url(../img/page-course/page-course-bg.png) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+.pagecourse-start__img {
+  position: absolute;
+  right: 45px;
+  top: 55px; }
+  .pagecourse-start__img img {
+    width: 550px; }
+.pagecourse-start__mobile {
+  display: none; }
+
+@media (max-width: 991px) {
+  .pagecourse-start__img {
+    right: 0;
+    top: 110px; }
+    .pagecourse-start__img img {
+      width: 360px; } }
+@media (max-width: 767px) {
+  .pagecourse-start__title {
+    display: none; }
+  .pagecourse-start__img {
+    display: none; }
+  .pagecourse-mobile {
+    padding: 15px 10px;
+    display: block;
+    background: url(../img/page-course/page-course-bg.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; }
+    .pagecourse-mobile__title {
+      text-align: center;
+      font-family: "Roboto Black", sans-serif;
+      margin: auto;
+      max-width: 400px;
+      font-size: 23px; }
+    .pagecourse-mobile img {
+      display: block;
+      margin: 30px auto;
+      max-width: 400px; } }
+@media (max-width: 420px) {
+  .pagecourse-mobile img {
+    width: 290px; } }
+.contacts-form__wrapper {
+  margin-bottom: 20px; }
+.contacts-title {
+  margin-bottom: 0; }
+  .contacts-title__wrapper {
+    align-items: center; }
+.contacts-top span {
+  color: #3390ee; }
+.contacts-img {
+  position: absolute;
+  top: -20px;
+  right: 85px; }
+  .contacts-img img {
+    width: 420px; }
+.contacts-call, .contacts-consult {
+  margin: 30px auto 10px;
+  font-size: 18px;
+  text-align: center; }
+.contacts-block {
+  padding: 20px 0 0 0;
+  text-align: center; }
+.contacts-phone {
+  margin-bottom: 20px;
+  color: #297acb;
+  font-size: 24px;
+  font-weight: 700; }
+  .contacts-phone__title {
+    color: #297acb;
+    font-size: 12px; }
+.contacts-managers {
+  text-align: center;
+  margin: 0 auto 20px; }
+  .contacts-managers__title {
+    line-height: 1.2;
+    font-family: "Roboto Black", sans-serif;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #297acb; }
+.contacts-phone {
+  justify-content: center; }
+  .contacts-phone__icon img {
+    width: 80px; }
+  .contacts-phone__number {
+    color: #444;
+    text-align: left; }
+    .contacts-phone__number-title {
+      font-size: 20px; }
+    .contacts-phone__number-number {
+      font-size: 40px; }
+.contacts-manager {
+  display: inline-block;
+  width: 200px; }
+  .contacts-manager__img img {
+    width: 100%; }
+  .contacts-manager__name {
+    padding: 5px 0;
+    background: #297acb;
+    color: #ffffff; }
+.contacts-address {
+  line-height: 1.2;
+  max-width: 600px;
+  margin: 0 auto 10px;
+  color: #297acb; }
+  .contacts-address__title {
+    color: #444; }
+.contacts-mobile__img {
+  display: none; }
+.contacts-gallery {
+  text-align: center;
+  margin: 20px auto; }
+  .contacts-gallery img {
+    margin-bottom: 4px;
+    width: 300px;
+    height: 200px;
+    display: inline-block; }
+
+@media only screen and (max-width: 991px) {
+  .contacts-img {
+    top: 20px;
+    right: 0; }
+    .contacts-img img {
+      width: 350px; }
+  .contacts-form__wrapper {
+    padding-bottom: 0; } }
+@media only screen and (max-width: 767px) {
+  .contacts-phone {
+    margin-left: 0; }
+    .contacts-phone__icon img {
+      width: 60px; }
+    .contacts-phone__number-title {
+      font-size: 16px; }
+    .contacts-phone__number-number {
+      font-size: 25px; }
+  .contacts-mobile__img {
+    height: 300px;
+    display: block;
+    position: relative; }
+    .contacts-mobile__img img {
+      position: absolute;
+      width: 350px;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .contacts-top__text {
+    max-width: 400px; }
+  .contacts-title__wrapper img {
+    display: inline-block; }
+  .contacts-img {
+    display: none; }
+  .contacts-call {
+    margin: 10px auto; }
+  .contacts-manager {
+    width: 32%;
+    margin: 10px auto; }
+  .contacts-managers__title {
+    width: 230px;
+    margin: 0px auto 15px; } }
+@media only screen and (max-width: 575px) {
+  .contacts-top {
+    text-align: left; }
+    .contacts-top__text {
+      max-width: 300px;
+      margin-left: 15px; } }
+@media only screen and (max-width: 500px) {
+  .contacts-maintitle {
+    margin-bottom: 0; } }
 .course-modal {
   display: none;
   padding: 20px;
