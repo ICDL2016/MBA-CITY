@@ -2173,7 +2173,7 @@ button:focus {
   top: 55px; }
   .pagecourse-start__img img {
     width: 550px; }
-.pagecourse__mobile {
+.pagecourse-mobile {
   display: none; }
 
 @media (max-width: 991px) {
