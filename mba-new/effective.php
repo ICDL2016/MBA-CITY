@@ -12,7 +12,7 @@
     </div>
     <div class="container position-relative">
       <div class="main-form__wrapper effective-wrapper">
-        <h2 class="main-form__header effective-header">Эффективная система обучения материала</h2>
+        <h2 class="main-form__header effective-header">Эффективная система освоения материала</h2>
         <form class="main-form header-form">
           <?php require '_form.php'; ?>
         </form>
