@@ -1,3 +1,21 @@
+.auth
+    &-field
+        display: block
+        padding: 5px
+        text-align: center
+        color: #fff
+        transition: background-color, .3s
+        cursor: pointer
+        &:hover
+            color: #fff
+            background-color: $light
+    &-descr
+        margin: 10px 0 15px
+        text-align: center
+        font-size: 18px
+        color: #fff
+
+
 .forauth
     &-video
         margin-bottom: 120px
@@ -6,6 +24,7 @@
             -webkit-background-size: cover
             background-size: cover
             background-position-y: 0
+            background-position-x: 100%
     &-form
         &__header
             max-width: 450px
@@ -135,12 +154,12 @@
     &-block
         display: flex
         margin: 5px
-        height: 100px
+        height: 90px
         cursor: pointer
         border: 1px solid $blue
         &__img
-            width: 150px
-            height: 100px
+            width: 100px
+            height: 90px
             background: url(../img/course.png) center no-repeat
             -webkit-background-size: cover
             background-size: cover
@@ -149,7 +168,7 @@
                 -webkit-background-size: cover
                 background-size: cover
         &__part
-            font-size: 18px
+            font-size: 16px
             font-family: 'Roboto Medium', sans-serif
             position: relative
             svg
@@ -160,19 +179,19 @@
                 top: 50%
                 transform: translateY(-50%)
         &__descr
-            width: 300px
+            width: 190px
             display: flex
             align-items: flex-start
             justify-content: space-between
             flex-direction: column
-            padding: 10px 10px 10px 15px
+            padding: 5px 10px 5px 15px
             font-size: 14px
             background: #fff
             color: $blue
             transition: all .2s
         &__title
             line-height: 1
-            font-size: 15px
+            font-size: 13px
             color: #000
             font-family: 'Roboto Black', sans-serif
         &:hover
@@ -209,6 +228,8 @@
                 margin: 0 auto 30px
                 max-width: 400px
                 font-size: 24px
+                span
+                    display: block
         &-video
             margin-bottom: 0
         &-info
@@ -236,6 +257,9 @@
                 display: none
 
 @media (max-width: 575px)
+    .auth
+        &-descr
+            font-size: 16px
     .forauth
         &-program
             &__title
@@ -255,18 +279,3 @@
                 height: 80px
                 img
                     max-width: 40px
-
-@media (max-width: 460px)
-    .programms
-        &-block
-            height: 80px
-            width: 100%
-            &__img
-                height: 80px
-            &__part
-                font-size: 13px
-            &__title
-                font-size: 13px
-            &__descr
-                padding: 0 5px 0 15px
-                font-size: 13px

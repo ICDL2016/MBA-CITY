@@ -1,6 +1,24 @@
 .minprice
+    &-btn
+        margin: 50px 0 0 0
+        padding: 8px 10px
+        display: block
+        width: 290px
+        -webkit-border-radius: 30px
+        -moz-border-radius: 30px
+        border-radius: 30px
+        background: #ff0000
+        text-align: center
+        color: #fff
+        transition: background 0.3s
+        border: none
+        &:hover
+            color: #fff
+            background: $light
     &-start
         margin: 20px auto 50px
+        &__auth
+            height: 350px
         &__title
             max-width: 600px
             span
@@ -11,6 +29,11 @@
             position: absolute
             right: 100px
             top: 50px
+            &-auth
+                right: 150px
+                top: 50px
+                img
+                    width: 290px
     &-discount
         margin-bottom: 30px
         &__img
@@ -30,13 +53,18 @@
             &__img
                 right: 0
                 top: auto
+                &-auth
+                    top: 60px
         &-discount
             &__text
                 font-size: 60px
 
 @media (max-width: 767px)
     .minprice
+        &-btn
+            margin: 20px auto
         &-start
+            height: auto
             margin-bottom: 10px
         &-discount
             margin-top: 30px

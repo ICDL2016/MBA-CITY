@@ -582,9 +582,10 @@ button:focus {
       align-items: center;
       justify-content: space-between; }
       .header-menu__list li {
-        padding: 12px 15px;
+        padding: 12px;
         transition: background-color, 0.3s;
-        cursor: pointer; }
+        cursor: pointer;
+        font-size: 15px; }
         .header-menu__list li:hover {
           background-color: #3390ee; }
         .header-menu__list li a {
@@ -1290,21 +1291,18 @@ button:focus {
   .diploma-video {
     margin-bottom: 0; }
     .diploma-video__block {
-      left: 50%; }
+      left: 50%;
+      top: 40%; }
+      .diploma-video__block svg {
+        width: 60px; }
   .diploma-form__wrapper {
-    top: 300px;
+    top: 200px;
     max-width: none; }
   .diploma-form__header {
-    margin: auto; }
-  .diploma-video__block {
-    top: 30%; }
-  .diploma-form__wrapper {
-    top: 200px; } }
+    margin: auto; } }
 @media (max-width: 450px) {
   .diploma-about {
     margin-bottom: 15px; }
-  .diploma-video__block svg {
-    width: 80px; }
   .diploma-form__wrapper {
     top: 130px; }
   .diploma-form__header {
@@ -1314,13 +1312,30 @@ button:focus {
     padding: 15px 10px;
     width: 310px;
     font-size: 16px; } }
+.auth-field {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  transition: background-color, 0.3s;
+  cursor: pointer; }
+  .auth-field:hover {
+    color: #fff;
+    background-color: #3390ee; }
+.auth-descr {
+  margin: 10px 0 15px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff; }
+
 .forauth-video {
   margin-bottom: 120px; }
   .forauth-video__wrapper {
     background: url(../img/for-auth-bg.png) center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position-y: 0; }
+    background-position-y: 0;
+    background-position-x: 100%; }
 .forauth-form__header {
   max-width: 450px;
   font-family: "Roboto Black", sans-serif; }
@@ -1445,12 +1460,12 @@ button:focus {
   .programms-block {
     display: flex;
     margin: 5px;
-    height: 100px;
+    height: 90px;
     cursor: pointer;
     border: 1px solid #297acb; }
     .programms-block__img {
-      width: 150px;
-      height: 100px;
+      width: 100px;
+      height: 90px;
       background: url(../img/course.png) center no-repeat;
       -webkit-background-size: cover;
       background-size: cover; }
@@ -1459,7 +1474,7 @@ button:focus {
         -webkit-background-size: cover;
         background-size: cover; }
     .programms-block__part {
-      font-size: 18px;
+      font-size: 16px;
       font-family: "Roboto Medium", sans-serif;
       position: relative; }
       .programms-block__part svg {
@@ -1470,19 +1485,19 @@ button:focus {
         top: 50%;
         transform: translateY(-50%); }
     .programms-block__descr {
-      width: 300px;
+      width: 190px;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       flex-direction: column;
-      padding: 10px 10px 10px 15px;
+      padding: 5px 10px 5px 15px;
       font-size: 14px;
       background: #fff;
       color: #297acb;
       transition: all 0.2s; }
     .programms-block__title {
       line-height: 1;
-      font-size: 15px;
+      font-size: 13px;
       color: #000;
       font-family: "Roboto Black", sans-serif; }
     .programms-block:hover .programms-block__descr {
@@ -1511,6 +1526,8 @@ button:focus {
     margin: 0 auto 30px;
     max-width: 400px;
     font-size: 24px; }
+    .forauth-program__title span {
+      display: block; }
   .forauth-video {
     margin-bottom: 0; }
   .forauth-info {
@@ -1535,6 +1552,9 @@ button:focus {
   .forauth-btn__comment {
     display: none; } }
 @media (max-width: 575px) {
+  .auth-descr {
+    font-size: 16px; }
+
   .forauth-program__title {
     font-size: 18px; }
   .forauth-info__number {
@@ -1551,19 +1571,6 @@ button:focus {
     height: 80px; }
     .forauth-info__icon img {
       max-width: 40px; } }
-@media (max-width: 460px) {
-  .programms-block {
-    height: 80px;
-    width: 100%; }
-    .programms-block__img {
-      height: 80px; }
-    .programms-block__part {
-      font-size: 13px; }
-    .programms-block__title {
-      font-size: 13px; }
-    .programms-block__descr {
-      padding: 0 5px 0 15px;
-      font-size: 13px; } }
 .catalog-title__wrapper {
   justify-content: center;
   align-items: center; }
@@ -1842,6 +1849,7 @@ button:focus {
       width: 350px;
       border: 1px solid rgba(41, 122, 203, 0.5); }
   .login-btn {
+    border: none;
     margin-top: 15px;
     width: 350px; }
   .login-border {
@@ -2060,8 +2068,26 @@ button:focus {
   .profession-header {
     font-size: 23px;
     margin-bottom: 0; } }
+.minprice-btn {
+  margin: 50px 0 0 0;
+  padding: 8px 10px;
+  display: block;
+  width: 290px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #ff0000;
+  text-align: center;
+  color: #fff;
+  transition: background 0.3s;
+  border: none; }
+  .minprice-btn:hover {
+    color: #fff;
+    background: #3390ee; }
 .minprice-start {
   margin: 20px auto 50px; }
+  .minprice-start__auth {
+    height: 350px; }
   .minprice-start__title {
     max-width: 600px; }
     .minprice-start__title span {
@@ -2072,6 +2098,11 @@ button:focus {
     position: absolute;
     right: 100px;
     top: 50px; }
+    .minprice-start__img-auth {
+      right: 150px;
+      top: 50px; }
+      .minprice-start__img-auth img {
+        width: 290px; }
 .minprice-discount {
   margin-bottom: 30px; }
   .minprice-discount__img img {
@@ -2088,10 +2119,15 @@ button:focus {
   .minprice-start__img {
     right: 0;
     top: auto; }
+    .minprice-start__img-auth {
+      top: 60px; }
   .minprice-discount__text {
     font-size: 60px; } }
 @media (max-width: 767px) {
+  .minprice-btn {
+    margin: 20px auto; }
   .minprice-start {
+    height: auto;
     margin-bottom: 10px; }
   .minprice-discount {
     margin-top: 30px; }
