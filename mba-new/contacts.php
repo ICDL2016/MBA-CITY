@@ -35,7 +35,7 @@
 <div class="start contacts-form__wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 contacts-padding">
                 <form class="main-form contacts-form">
                     <h4 class="main-form__title">Написать</h4>
                     <input class="form-input__name" type="text" name="name" placeholder="Имя*" required>

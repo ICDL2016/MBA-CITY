@@ -34,7 +34,7 @@
                     <div class="auth-field auth-name">Имя</div>
                     <div class="auth-field auth-email">abc@abc.ru</div>
                     <div class="auth-field auth-phone">+71002003040</div>
-                    <div class="auth-descr">Посмотрите демонстрационный курс</div>
+                    <div class="auth-descr">Начните обучение бесплатно</div>
                     <button class="main-form__submit">Начать обучение бесплатно</button>
                     <div class="main-form__bottom">
                         И посмотреть мой документ об образовании <br>
@@ -51,7 +51,7 @@
     <a href="#" class="auth-field auth-name">Имя</a>
     <a href="#" class="auth-field auth-email">abc@abc.ru</a>
     <a href="#" class="auth-field auth-phone">+71002003040</a>
-    <div class="auth-descr">Посмотрите демонстрационный курс</div>
+    <div class="auth-descr">Начните обучение бесплатно</div>
     <button class="main-form__submit">Начать обучение бесплатно</button>
     <div class="main-form__bottom">
         И посмотреть мой документ об образовании <br>
@@ -96,93 +96,18 @@
  </div>
 
 <div class="forauth-program">
-    <div class="container">
-        <div class="forauth-program__title">Программа курса обучения <span>«КУЛИНАР-ЭКСПЕРТ»</span></div>
-        <div class="programms">
-            <div class="programms-block">
-                <div class="programms-block__img programms-block__img2">
-
-                </div>
-                <div class="programms-block__descr">
-                    <div class="programms-block__part">Часть 1
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="124.512px" height="124.512px" viewBox="0 0 124.512 124.512" style="enable-background:new 0 0 124.512 124.512;" xml:space="preserve"><g> <path d="M113.956,57.006l-97.4-56.2c-4-2.3-9,0.6-9,5.2v112.5c0,4.6,5,7.5,9,5.2l97.4-56.2C117.956,65.105,117.956,59.306,113.956,57.006z"/></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g></svg>
-                    </div>
-                    <div class="programms-block__title">Санитарные нормы на предприятии общественного питания</div>
-                    <a href="#" class="programms-block__more">Подробнее</a>
-                </div>
-            </div>
-            <div class="programms-block">
-                <div class="programms-block__img">
-
-                </div>
-                <div class="programms-block__descr">
-                    <div class="programms-block__part">Часть 1
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="124.512px" height="124.512px" viewBox="0 0 124.512 124.512" style="enable-background:new 0 0 124.512 124.512;" xml:space="preserve"><g> <path d="M113.956,57.006l-97.4-56.2c-4-2.3-9,0.6-9,5.2v112.5c0,4.6,5,7.5,9,5.2l97.4-56.2C117.956,65.105,117.956,59.306,113.956,57.006z"/></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g></svg>
-                    </div>
-                    <div class="programms-block__title">Санитарные нормы на предприятии общественного питания</div>
-                    <a href="#" class="programms-block__more">Подробнее</a>
-                </div>
-            </div>
-            <div class="programms-block">
-                <div class="programms-block__img programms-block__img2">
-
-                </div>
-                <div class="programms-block__descr">
-                    <div class="programms-block__part">Часть 1
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="124.512px" height="124.512px" viewBox="0 0 124.512 124.512" style="enable-background:new 0 0 124.512 124.512;" xml:space="preserve"><g> <path d="M113.956,57.006l-97.4-56.2c-4-2.3-9,0.6-9,5.2v112.5c0,4.6,5,7.5,9,5.2l97.4-56.2C117.956,65.105,117.956,59.306,113.956,57.006z"/></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g></svg>
-                    </div>
-                    <div class="programms-block__title">Санитарные нормы на предприятии общественного питания</div>
-                    <a href="#" class="programms-block__more">Подробнее</a>
-                </div>
-            </div>
-            <div class="programms-block">
-                <div class="programms-block__img">
-
-                </div>
-                <div class="programms-block__descr">
-                    <div class="programms-block__part">Часть 1
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="124.512px" height="124.512px" viewBox="0 0 124.512 124.512" style="enable-background:new 0 0 124.512 124.512;" xml:space="preserve"><g> <path d="M113.956,57.006l-97.4-56.2c-4-2.3-9,0.6-9,5.2v112.5c0,4.6,5,7.5,9,5.2l97.4-56.2C117.956,65.105,117.956,59.306,113.956,57.006z"/></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g></svg>
-                    </div>
-                    <div class="programms-block__title">Санитарные нормы на предприятии общественного питания</div>
-                    <a href="#" class="programms-block__more">Подробнее</a>
-                </div>
-            </div>
-            <div class="programms-block">
-                <div class="programms-block__img programms-block__img2">
-
-                </div>
-                <div class="programms-block__descr">
-                    <div class="programms-block__part">Часть 1
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="124.512px" height="124.512px" viewBox="0 0 124.512 124.512" style="enable-background:new 0 0 124.512 124.512;" xml:space="preserve"><g> <path d="M113.956,57.006l-97.4-56.2c-4-2.3-9,0.6-9,5.2v112.5c0,4.6,5,7.5,9,5.2l97.4-56.2C117.956,65.105,117.956,59.306,113.956,57.006z"/></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g></svg>
-                    </div>
-                    <div class="programms-block__title">Санитарные нормы на предприятии общественного питания</div>
-                    <a href="#" class="programms-block__more">Подробнее</a>
-                </div>
-            </div>
-            <div class="programms-block">
-                <div class="programms-block__img programms-block__img2">
-
-                </div>
-                <div class="programms-block__descr">
-                    <div class="programms-block__part">Часть 1
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="124.512px" height="124.512px" viewBox="0 0 124.512 124.512" style="enable-background:new 0 0 124.512 124.512;" xml:space="preserve"><g> <path d="M113.956,57.006l-97.4-56.2c-4-2.3-9,0.6-9,5.2v112.5c0,4.6,5,7.5,9,5.2l97.4-56.2C117.956,65.105,117.956,59.306,113.956,57.006z"/></g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g></svg>
-                    </div>
-                    <div class="programms-block__title">Санитарные нормы на предприятии общественного питания</div>
-                    <a href="#" class="programms-block__more">Подробнее</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="forauth-program__title">Программа курса обучения <span>«КУЛИНАР-ЭКСПЕРТ»</span></div>
+    <?php require_once '_programs.php'; ?>
 </div>
 
-  <div class="about actual-about">
+<div class="about actual-about">
     <h2 class="title about-title">
         Пройдите обучение в Бизнес Академии МБА СИТИ
         и станьте высокооплачиваемым специалистом
         в интересной Вам сфере деятельности
     </h2>
     <?php require_once '_about.php'; ?>
-  </div>
+</div>
 
 <?php require_once '_advantages.php'; ?>
 
@@ -202,7 +127,7 @@
                     <a href="#" class="auth-field auth-name">Имя</a>
                     <a href="#" class="auth-field auth-email">abc@abc.ru</a>
                     <a href="#" class="auth-field auth-phone">+71002003040</a>
-                    <div class="auth-descr">Посмотрите демонстрационный курс</div>
+                    <div class="auth-descr">Начните обучение бесплатно</div>
                     <button class="main-form__submit">Начать обучение бесплатно</button>
                     <div class="main-form__bottom">
                         И посмотреть мой документ об образовании <br>
@@ -222,7 +147,7 @@
     <a href="#" class="auth-field auth-name">Имя</a>
     <a href="#" class="auth-field auth-email">abc@abc.ru</a>
     <a href="#" class="auth-field auth-phone">+71002003040</a>
-    <div class="auth-descr">Посмотрите демонстрационный курс</div>
+    <div class="auth-descr">Начните обучение бесплатно</div>
     <button class="main-form__submit">Начать обучение бесплатно</button>
     <div class="main-form__bottom">
         И посмотреть мой документ об образовании <br>

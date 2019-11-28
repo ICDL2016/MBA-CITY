@@ -35,10 +35,6 @@
 
   <img src="img/start.png" alt="start" class="profession-girl minprice-girl">
 
-  <form class="main-form mobile-form mb-1">
-    <?php require '_form.php'; ?>
-  </form>
-
   <?php require_once '_discount.php';?>
 
   <div class="about">
