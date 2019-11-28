@@ -18,7 +18,7 @@
 
 .forauth
     &-video
-        margin-bottom: 120px
+        margin-bottom: 60px
         &__wrapper
             background: url(../img/for-auth-bg.png) center no-repeat
             -webkit-background-size: cover
@@ -147,9 +147,12 @@
                 transform: translateX(-50%)
 
 .programms
+    max-width: 1440px
+    padding: 0 5px
     display: flex
-    justify-content: space-around
+    justify-content: center
     flex-wrap: wrap
+    align-items: center
     margin: 0 auto 40px
     &-block
         display: flex
@@ -205,6 +208,13 @@
         &__more
             text-decoration: underline
 
+@media (max-width: 1599px)
+    .programms
+        &::after
+            content: ''
+            width: 290px
+            margin: 5px
+
 @media (max-width: 991px)
     .forauth
         &-video
@@ -215,6 +225,11 @@
                     display: none
             &__number
                 font-size: 45px
+
+@media (max-width: 915px)
+    .programms
+        &::after
+            display: none
 
 @media (max-width: 767px)
     .breadcrumbs

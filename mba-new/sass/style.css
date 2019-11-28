@@ -582,6 +582,7 @@ button:focus {
       align-items: center;
       justify-content: space-between; }
       .header-menu__list li {
+        width: max-content;
         padding: 12px;
         transition: background-color, 0.3s;
         cursor: pointer;
@@ -624,6 +625,8 @@ button:focus {
   .position-relative .form-checkbox + label {
     font-size: 12px; }
 
+  .header-menu__list li {
+    font-size: 13px; }
   .header-form {
     margin-left: 10%;
     width: 300px; }
@@ -1329,7 +1332,7 @@ button:focus {
   color: #fff; }
 
 .forauth-video {
-  margin-bottom: 120px; }
+  margin-bottom: 60px; }
   .forauth-video__wrapper {
     background: url(../img/for-auth-bg.png) center no-repeat;
     -webkit-background-size: cover;
@@ -1453,9 +1456,12 @@ button:focus {
     transform: translateX(-50%); }
 
 .programms {
+  max-width: 1440px;
+  padding: 0 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0 auto 40px; }
   .programms-block {
     display: flex;
@@ -1510,6 +1516,11 @@ button:focus {
     .programms-block__more {
       text-decoration: underline; }
 
+@media (max-width: 1599px) {
+  .programms::after {
+    content: "";
+    width: 290px;
+    margin: 5px; } }
 @media (max-width: 991px) {
   .forauth-video {
     margin-bottom: 100px; }
@@ -1517,6 +1528,9 @@ button:focus {
     display: none; }
   .forauth-info__number {
     font-size: 45px; } }
+@media (max-width: 915px) {
+  .programms::after {
+    display: none; } }
 @media (max-width: 767px) {
   .breadcrumbs-wrapper {
     justify-content: center;
@@ -2368,6 +2382,9 @@ button:focus {
 @media only screen and (max-width: 500px) {
   .contacts-maintitle {
     margin-bottom: 0; } }
+@media (max-width: 425px) {
+  .contacts-padding {
+    padding: 0 !important; } }
 .course-modal {
   display: none;
   padding: 20px;
