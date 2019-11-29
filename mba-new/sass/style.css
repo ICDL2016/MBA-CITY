@@ -1521,11 +1521,12 @@ button:focus {
     content: "";
     width: 290px;
     margin: 5px; } }
+@media (max-width: 1199px) {
+  .forauth-info__title::before, .forauth-info__title::after {
+    display: none; } }
 @media (max-width: 991px) {
   .forauth-video {
     margin-bottom: 100px; }
-  .forauth-info__title::before, .forauth-info__title::after {
-    display: none; }
   .forauth-info__number {
     font-size: 45px; } }
 @media (max-width: 915px) {
@@ -2350,7 +2351,7 @@ button:focus {
     .contacts-phone__number-number {
       font-size: 25px; }
   .contacts-mobile__img {
-    height: 300px;
+    height: 250px;
     display: block;
     position: relative; }
     .contacts-mobile__img img {
@@ -2374,6 +2375,8 @@ button:focus {
     width: 230px;
     margin: 0px auto 15px; } }
 @media only screen and (max-width: 575px) {
+  .contacts-mobile__img img {
+    width: 290px; }
   .contacts-top {
     text-align: left; }
     .contacts-top__text {

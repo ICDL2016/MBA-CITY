@@ -215,14 +215,20 @@
             width: 290px
             margin: 5px
 
+
+@media (max-width: 1199px)
+    .forauth
+        &-info
+            &__title
+                &::before, &::after
+                    display: none
+
+
 @media (max-width: 991px)
     .forauth
         &-video
             margin-bottom: 100px
         &-info
-            &__title
-                &::before, &::after
-                    display: none
             &__number
                 font-size: 45px
 
