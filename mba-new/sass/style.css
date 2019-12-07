@@ -1993,7 +1993,7 @@ button:focus {
   .profession-start__img {
     position: absolute;
     right: 200px;
-    bottom: 0; }
+    top: 0; }
     .profession-start__img img {
       width: 320px; }
 .profession-form {
