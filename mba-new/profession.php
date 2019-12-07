@@ -23,10 +23,9 @@
 
 <div class="main profession-main">
   <div class="effective-slider">
-    <div class="main-slider__block main-slider__block1 effective-slider__block">
+    <div class="main-slider__block main-slider__block1 profession-slider__block">
       <div class="container main-slider__block-container">
-        <div class="main-slider__block-human main-slider__block1-human profession-man__wrapper">
-          <img src="img/eff-books.png" alt="books" class="effective-books profession-man">
+        <div class="main-slider__block-human main-slider__block1-human profession-main__wrapper">
         </div>
       </div>
     </div>
