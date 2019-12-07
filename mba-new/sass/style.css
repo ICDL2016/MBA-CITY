@@ -1928,6 +1928,11 @@ button:focus {
   .remind-hint {
     margin: 0 auto 10px;
     width: 200px; } }
+.profession-slider__block {
+  background: url(../img/profession-bg.png) center no-repeat;
+  background-position-y: 0;
+  -webkit-background-size: cover;
+  background-size: cover; }
 .profession-man {
   bottom: 0; }
 .profession-main {
@@ -1972,7 +1977,9 @@ button:focus {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: #ccc;
+    background: url(../img/profession-start__bg.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
     z-index: -1;
     height: 300px;
     width: 100%; }
@@ -1986,9 +1993,9 @@ button:focus {
   .profession-start__img {
     position: absolute;
     right: 200px;
-    top: 0; }
+    bottom: 0; }
     .profession-start__img img {
-      width: 350px; }
+      width: 320px; }
 .profession-form {
   bottom: auto; }
 .profession-all {
@@ -2033,6 +2040,7 @@ button:focus {
   .profession-start__top {
     justify-content: flex-start; }
   .profession-header {
+    width: 420px;
     margin-bottom: 15px; }
   .profession-all::before, .profession-all::after {
     display: none; }
@@ -2040,10 +2048,15 @@ button:focus {
     bottom: -25px; }
   .profession-start__img {
     right: 0;
-    top: 75px; }
+    top: 32px; }
     .profession-start__img img {
       width: 300px; } }
 @media (max-width: 767px) {
+  .profession-slider__block {
+    height: 400px;
+    background-position-x: 60%; }
+  .profession-header {
+    width: 100%; }
   .profession-main {
     margin-bottom: 0; }
   .profession-text {
@@ -2055,13 +2068,14 @@ button:focus {
     .profession-text__descr {
       font-size: 14px; }
   .profession-wrapper {
-    bottom: 10px !important; }
+    bottom: 0 !important; }
   .profession-man {
     bottom: auto;
     top: 40px; }
     .profession-man__wrapper {
       bottom: auto; }
   .profession-girl {
+    width: 290px;
     display: block;
     margin: 0 auto 20px; }
   .profession-all {
@@ -2080,9 +2094,21 @@ button:focus {
   .profession-start__bg, .profession-start__img {
     display: none; } }
 @media (max-width: 575px) {
+  .profession-wrapper {
+    bottom: 10px !important; }
   .profession-header {
     font-size: 23px;
     margin-bottom: 0; } }
+@media (max-width: 400px) {
+  .profession-wrapper {
+    bottom: 0 !important; }
+  .profession-header {
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.4); }
+  .profession-slider__block {
+    -ms-background-position-x: 70%;
+    background-position-x: 70%;
+    height: 300px; } }
 .minprice-btn {
   margin: 50px 0 0 0;
   padding: 8px 10px;

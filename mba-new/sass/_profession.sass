@@ -1,4 +1,11 @@
 .profession
+    &-slider
+        &__block
+            background: url(../img/profession-bg.png) center no-repeat
+            background-position-y: 0
+            -webkit-background-size: cover
+            background-size: cover
+
     &-man
         bottom: 0
     &-main
@@ -44,7 +51,9 @@
             left: 0
             top: 50%
             transform: translateY(-50%)
-            background: #ccc
+            background: url(../img/profession-start__bg.png) center no-repeat
+            -webkit-background-size: cover
+            background-size: cover
             z-index: -1
             height: 300px
             width: 100%
@@ -58,9 +67,9 @@
         &__img
             position: absolute
             right: 200px
-            top: 0
+            bottom: 0
             img
-                width: 350px
+                width: 320px
     &-form
         bottom: auto
     &-all
@@ -110,6 +119,7 @@
             &__top
                 justify-content: flex-start
         &-header
+            width: 420px
             margin-bottom: 15px
         &-all
             &::before, &::after
@@ -119,12 +129,18 @@
         &-start
             &__img
                 right: 0
-                top: 75px
+                top: 32px
                 img
                     width: 300px
 
 @media (max-width: 767px)
     .profession
+        &-slider
+            &__block
+                height: 400px
+                background-position-x: 60%
+        &-header
+            width: 100%
         &-main
             margin-bottom: 0
         &-text
@@ -136,13 +152,14 @@
             &__descr
                 font-size: 14px
         &-wrapper
-            bottom: 10px!important
+            bottom: 0!important
         &-man
             bottom: auto
             top: 40px
             &__wrapper
                 bottom: auto
         &-girl
+            width: 290px
             display: block
             margin: 0 auto 20px
         &-all
@@ -164,6 +181,21 @@
 
 @media (max-width: 575px)
     .profession
+        &-wrapper
+            bottom: 10px!important
         &-header
             font-size: 23px
             margin-bottom: 0
+
+@media (max-width: 400px)
+    .profession
+        &-wrapper
+            bottom: 0!important
+        &-header
+            padding: 10px 0
+            background: rgba(#000, .4)
+        &-slider
+            &__block
+                -ms-background-position-x: 70%
+                background-position-x: 70%
+                height: 300px
