@@ -860,11 +860,11 @@ button:focus {
     background-size: contain; }
   .choose-blocks {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center; }
   .choose-block {
-    margin: 7px auto;
+    margin: 7px;
     width: 290px; }
     .choose-block__descr {
       background: rgba(255, 255, 255, 0.7);
@@ -874,11 +874,6 @@ button:focus {
   .choose-bottom {
     -webkit-background-size: cover;
     background-size: cover; } }
-@media (max-width: 1599px) {
-  .choose-blocks::after {
-    content: "";
-    width: 290px;
-    margin: 7px auto; } }
 @media (max-width: 1199px) {
   .choose {
     margin-bottom: 27.5%; }
@@ -891,7 +886,7 @@ button:focus {
   .choose {
     margin-bottom: 29%; }
     .choose-block {
-      margin: 6px auto; }
+      margin: 6px; }
     .choose-bottom {
       bottom: -370px; } }
 @media (max-width: 767px) {
@@ -900,6 +895,8 @@ button:focus {
     .choose-bottom {
       display: none; } }
 @media (max-width: 660px) {
+  .choose-block {
+    margin: 6px auto; }
   .choose-blocks {
     margin: auto;
     max-width: 400px; } }

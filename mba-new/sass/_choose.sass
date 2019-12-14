@@ -13,11 +13,11 @@
         background-size: contain
     &-blocks
         display: flex
-        justify-content: space-around
+        justify-content: flex-start
         flex-wrap: wrap
         align-items: center
     &-block
-        margin: 7px auto
+        margin: 7px
         width: 290px
         &__descr
             background: rgba(#fff, .7)
@@ -28,14 +28,6 @@
         &-bottom
             -webkit-background-size: cover
             background-size: cover
-
-@media (max-width: 1599px)
-    .choose
-        &-blocks
-            &::after
-                content: ''
-                width: 290px
-                margin: 7px auto
 
 @media (max-width: 1199px)
     .choose
@@ -50,7 +42,7 @@
     .choose
         margin-bottom: 29%
         &-block
-            margin: 6px auto
+            margin: 6px
         &-bottom
             bottom: -370px
 
@@ -62,6 +54,8 @@
 
 @media (max-width: 660px)
     .choose
+        &-block
+            margin: 6px auto
         &-blocks
             margin: auto
             max-width: 400px
