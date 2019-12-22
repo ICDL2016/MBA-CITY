@@ -1513,22 +1513,21 @@ button:focus {
     .programms-block__more {
       text-decoration: underline; }
 
-@media (max-width: 1599px) {
-  .programms::after {
-    content: "";
-    width: 290px;
-    margin: 5px; } }
 @media (max-width: 1199px) {
   .forauth-info__title::before, .forauth-info__title::after {
     display: none; } }
+@media (max-width: 1220px) {
+  .programms {
+    width: 916px;
+    justify-content: flex-start; } }
 @media (max-width: 991px) {
   .forauth-video {
     margin-bottom: 100px; }
   .forauth-info__number {
     font-size: 45px; } }
-@media (max-width: 915px) {
-  .programms::after {
-    display: none; } }
+@media (max-width: 920px) {
+  .programms {
+    width: 614px; } }
 @media (max-width: 767px) {
   .breadcrumbs-wrapper {
     justify-content: center;
@@ -1563,6 +1562,10 @@ button:focus {
     display: none; }
   .forauth-btn__comment {
     display: none; } }
+@media (max-width: 620px) {
+  .programms {
+    width: 100%;
+    justify-content: center; } }
 @media (max-width: 575px) {
   .auth-descr {
     font-size: 16px; }
