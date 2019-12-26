@@ -11,10 +11,11 @@
 .directions
     margin: 10px 0 20px
     &-blocks
-        width: 100%
+        margin: auto
+        width: 1510px
         display: flex
         flex-wrap: wrap
-        justify-content: center
+        justify-content: flex-start
         position: relative
     &-title
         text-transform: none
@@ -95,38 +96,20 @@
     background: $light!important
     color: #fff!important
 
-@media (min-width: 1510px)
+@media only screen and (max-width: 1509px)
     .directions
         &-blocks
-            &::after
-                content: ''
-                width: 290px
-                margin: 6px
+            width: 1208px
 
-@media (min-width: 1812px)
+@media only screen and (max-width: 1207px)
     .directions
         &-blocks
-            &::after
-                content: ''
-                width: 894px
-                margin: 6px
-
-
-@media (max-width: 1509px)
-    .directions
-        &-blocks
-            &::after
-                content: ''
-                width: 894px
-                margin: 6px
+            width: 906px
 
 @media only screen and (max-width: 905px)
     .directions
         &-blocks
-            &::after
-                content: ''
-                width: 290px
-                margin: 6px
+            width: 604px
 
 @media only screen and (max-width: 767px)
     .catalog
@@ -147,6 +130,12 @@
                     bottom: 0
                     width: 100%
                     height: 2px
+
+@media only screen and (max-width: 604px)
+    .directions
+        &-blocks
+            width: 100%
+            justify-content: center
 
 @media only screen and (max-width: 575px)
     .catalog

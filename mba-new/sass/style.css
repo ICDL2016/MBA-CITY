@@ -1597,10 +1597,11 @@ button:focus {
 .directions {
   margin: 10px 0 20px; }
   .directions-blocks {
-    width: 100%;
+    margin: auto;
+    width: 1510px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative; }
   .directions-title {
     text-transform: none;
@@ -1677,26 +1678,15 @@ button:focus {
   background: #3390ee !important;
   color: #fff !important; }
 
-@media (min-width: 1510px) {
-  .directions-blocks::after {
-    content: "";
-    width: 290px;
-    margin: 6px; } }
-@media (min-width: 1812px) {
-  .directions-blocks::after {
-    content: "";
-    width: 894px;
-    margin: 6px; } }
-@media (max-width: 1509px) {
-  .directions-blocks::after {
-    content: "";
-    width: 894px;
-    margin: 6px; } }
+@media only screen and (max-width: 1509px) {
+  .directions-blocks {
+    width: 1208px; } }
+@media only screen and (max-width: 1207px) {
+  .directions-blocks {
+    width: 906px; } }
 @media only screen and (max-width: 905px) {
-  .directions-blocks::after {
-    content: "";
-    width: 290px;
-    margin: 6px; } }
+  .directions-blocks {
+    width: 604px; } }
 @media only screen and (max-width: 767px) {
   .catalog-title__text {
     margin: 0 0 0 10px; }
@@ -1713,6 +1703,10 @@ button:focus {
       bottom: 0;
       width: 100%;
       height: 2px; } }
+@media only screen and (max-width: 604px) {
+  .directions-blocks {
+    width: 100%;
+    justify-content: center; } }
 @media only screen and (max-width: 575px) {
   .catalog-title__top {
     font-size: 24px; } }
