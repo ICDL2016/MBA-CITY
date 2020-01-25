@@ -13,7 +13,7 @@
         </div>
         <i class="fa fa-arrow-right"></i>
         <div class="breadcrumbs-current">
-          <a href="page-course.php.php">
+          <a href="page-course.php">
             Полный курс кулинарного дела КУЛИНАР-ЭКСПЕРТ
           </a>
         </div>
@@ -53,7 +53,32 @@
     <div id="divPlayer1"></div>
   </div>
 
+  <form class="main-form video-form">
+    <h3>Полный курс кулинарного дела КУЛИНАР-ЭКСПЕРТ</h3>
+    <form class="main-form header-form">
+      <h4 class="main-form__title diploma-form__title">Заполните имя в своем дипломе</h4>
+      <h3 class="main-form__title diploma-form__title2">Начните обучение и закажите доставку диплома</h3>
+      <input class="form-input__name" type="text" name="name" placeholder="Имя*" required>
+      <div class="form-input__span form-input__span-name">Поле "Имя" обязательно для заполнения</div>
+      <input class="form-input__email" type="email" name="email" placeholder="Email*" required>
+      <div class="form-input__span form-input__span-email">Поле "Email" обязательно для заполнению и должно содержать
+        правильный электронный адрес (например, example@mail.ru)
+      </div>
+      <input type="text" name="phone" placeholder="Введите ваш телефон" required>
+      <div class="form-checkbox__block">
+        <input class="form-checkbox" type="checkbox" name="checkbox" id="ch3" checked required>
+        <label class="form-label" for="ch3">Я принимаю <a href="#">Условия Конфиденциальности</a></label>
+      </div>
+      <button class="main-form__submit">Начать обучение бесплатно</button>
+      <div class="main-form__bottom">
+        И посмотреть мой документ об образовании <br>
+        <span>СЕГОДНЯ 25.04.2019</span>
+      </div>
+    </form>
+  </form>
+
   <form class="main-form mobile-form mb-1">
+    <h3 class="mobile-form__header">Полный курс кулинарного дела КУЛИНАР-ЭКСПЕРТ</h3>
       <h4 class="main-form__title">Начните обучение бесплатно</h4>
       <input class="form-input__name" type="text" name="name" placeholder="Имя*" required>
       <div class="form-input__span form-input__span-name">Поле "Имя" обязательно для заполнения</div>
