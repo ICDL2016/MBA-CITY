@@ -177,3 +177,9 @@ if ($(window).width() > 767 && $('.video-form__show').length) {
         $('.video-form').fadeIn();
     })
 }
+
+if ($(window).width() <= 767 && $('.video-form__show').length) {
+    $('.video-form__show').on('click', function () {
+        $('.mobile-form__header').fadeIn();
+    })
+}
