@@ -1285,7 +1285,7 @@ button:focus {
   .diploma-choose__btn:hover {
     color: #fff;
     background: #3390ee; }
-  .diploma-choose__btn::before {
+  .diploma-choose__btn::before, .diploma-choose__btn::after {
     content: "";
     position: absolute;
     width: 200px;
@@ -1293,13 +1293,16 @@ button:focus {
     background: #3dbbe9;
     left: -260px;
     top: 50%; }
+  .diploma-choose__btn::after {
+    left: auto;
+    right: -260px; }
 
 @media (max-width: 991px) {
   .diploma-video__block {
     left: 70%; }
   .diploma-form__wrapper {
     max-width: 400px; }
-  .diploma-choose__btn::before {
+  .diploma-choose__btn::before, .diploma-choose__btn::after {
     display: none; } }
 @media (max-width: 767px) {
   .diploma-video {
