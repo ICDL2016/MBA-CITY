@@ -56,7 +56,7 @@
   <div class="container">
     <div class="row align-items-center pt-3 pb-3">
       <div class="col-lg-6 order-1 order-lg-0 text-center text-lg-left"> MBA CITY © 2001-2019  Все права защищены. </div>
-      <div class="col-lg-6 order-0 order-lg-1 text-lg-right text-center mb-lg-0 mb-3"><img src="img/logo2.png" alt="logo"></div>
+      <div class="col-lg-6 order-0 order-lg-1 text-lg-right text-center mb-lg-0 mb-3"><img src="img/logo2.svg" alt="logo"></div>
     </div>
   </div>
 </div>
