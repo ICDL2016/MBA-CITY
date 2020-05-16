@@ -29,7 +29,7 @@
 
       <div class="container position-relative">
         <div class="main-form__wrapper diploma-form__wrapper">
-          <h2 class="main-form__header diploma-form__header forauth-form__header">Полный курс кулинарного дела КУЛИНАР-ЭКСПЕРТ</h2>
+          <h2 class="main-form__header diploma-form__header forauth-form__header" style="opacity: 0; height: 60px">ФИТНЕС-ТРЕНЕР</h2>
           <form class="main-form header-form">
             <h4 class="main-form__title">Начните обучение бесплатно</h4>
             <input class="form-input__name" type="text" name="name" placeholder="Имя*" required>
@@ -257,4 +257,28 @@
 <?php require_once '_modal.php'; ?>
 <?php require_once '_footer.php'; ?>
 <?php require_once '_scripts.php'; ?>
+    <script>
+        $(document).ready(function () {
+
+            function mainTitleFont() {
+                if ($('.main-form__header').text().length > 33) {
+                    if ($(window).width() > 400) {
+                        $('.main-form__header').css('font-size', '26px')
+                    } else {
+                        $('.main-form__header').css('font-size', '20px')
+                    }
+                }
+            }
+
+            mainTitleFont();
+            $('.main-form__header').css({
+                opacity: 1,
+                height: 'auto'
+            });
+
+            if ($('.main-form__header').text().length > 33) {
+                $(window).resize(mainTitleFont)
+            }
+        })
+    </script>
 <?php require_once '_end.php'; ?>
